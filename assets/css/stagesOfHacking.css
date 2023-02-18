@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  background-image: url("/assets/img/circle-scatter-haikei\ \(2\).png");
+  background-size: cover;
+  
+}
+main{
+  margin-left: 20%;
+  margin-right:20% ;
+  margin-bottom:10% ;
+}
+/* header end  */
+header {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  margin-bottom: 20vh;
+  height: 10vh;
+}
+header > div > img {
+  height: 100%;
+}
+header > nav {
+  display: flex;
+  z-index: 100;
+}
+button {
+  border-radius: 1rem;
+  padding: 5%;
+  padding-right: 1em;
+  padding-left: 1em;
+  border: none;
+  background-color: whitesmoke;
+}
+a {
+  margin-right: 1em;
+  margin-top: 2em;
+
+}
+#wave {
+    width: 100%;
+    height: 30vh;
+    z-index: -1;
+    position: absolute;
+}
