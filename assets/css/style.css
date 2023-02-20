@@ -108,7 +108,7 @@ a {
 }
 
 .hackersInfo{
-  background-image: url('./img/circle-scatter-haikei.png');
+  background-image: url('../img/circle-scatter-haikei.png');
   background-size:cover;
   background-attachment: fixed;
 }
