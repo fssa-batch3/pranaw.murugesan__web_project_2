@@ -1,5 +1,5 @@
 body{
-  background-image: url("/assets/img/courseBg.png");
+  background-image: url("../img/courseBg.png");
   background-size: cover;
   background-attachment: fixed;
   /* background: linear-gradient(#0066ff, blueviolet); */
