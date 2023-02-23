@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #E8D5C4;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+}
+header a button {
+    border-radius: 1rem;
+    padding: 1%;
+    padding-right: 1em;
+    padding-left: 1em;
+    border: none;
+    background-color: whitesmoke;
+  }
+.introductionTab{
+    background-color: #E8D5C4;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+.introductionTab p{
+    color: black;
+}
+.container{
+    display: flex;
+    margin-top: 2%;
+}
+aside{
+    width: 30%;
+    margin-right: 2%
+}
+main{
+    width: 70%;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 2%;
+}
+
+aside div{
+    border: 1px solid gray;
+    background-color: white;
+    margin-bottom: 6%;
+}
+aside div:first-child img{
+    margin-left: 30%;
+}
+aside div:last-child> img{
+    width: 100%;
+    
+}
+strong{
+    color: blueviolet;
+}
+h1{
+    color: green;
+}
+#enroll{
+    padding: .5%;
+    display: flex;
+    border: none;
+}

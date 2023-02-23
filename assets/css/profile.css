@@ -1,0 +1,17 @@
+body{
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+}
+aside{
+    width: 30%;
+    background-color: blue;
+    height: 100vh;
+}
+.courseComplete{
+    background-color: aqua;
+    display: flex;
+}
