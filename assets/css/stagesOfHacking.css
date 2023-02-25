@@ -21,23 +21,22 @@ aside{
   display: flex;
   flex-direction: column;
   position: fixed;
-  top : 0%;
+  top : 16%;
   background-color: skyblue;
-  padding: 2%;
+  text-align: center;
   height: 100vh;
-  z-index: -100;
-  padding-top:10% ;
 }
 aside a{
   text-decoration: none;
   font-size: 1.2rem;
   color:darkblue;
+  cursor: pointer;
 }
 header {
   justify-content: space-between;
   display: flex;
   width: 100%;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
   height: 10vh;
 }
 header > div > img {

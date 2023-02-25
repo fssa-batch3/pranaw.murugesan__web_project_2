@@ -1,17 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 body{
     background-color: whitesmoke;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family:  'Poppins', sans-serif;
 }
 .container{
     display: flex;
 }
 aside{
     width: 30%;
-    background-color: blue;
-    height: 100vh;
+    height: 100;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+aside img{
+    width: 100%;
+    margin-top: 10%;
+    border-radius: 5%;
+}
+main{
+    padding-right: 10%;
+    padding-left: 10%;
 }
 .courseComplete{
     background-color: aqua;
     display: flex;
+}
+.firstSection{
+    display: flex;
+}
+.firstSection div:last-child{
+    margin-left: 10%;
+}
+.achievements img{
+    width: 50%;
+    margin-right: 3%;
+    display: flex;
+
 }

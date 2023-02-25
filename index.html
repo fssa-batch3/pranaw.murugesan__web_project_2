@@ -27,7 +27,7 @@
       <a href="#"><button>Home</button></a>
       <a href="./course/course.html"><button>Courses</button></a>
       <a href="#"><button>About</button></a>
-      <a href="./login/signin.html"><button>Profile</button></a>
+      <a><button id="profile">Profile</button></a>
     </nav>
     <img id="wave" src="./assets/img/wave-haikei.png" alt="">
   </header>
@@ -111,6 +111,16 @@
 </footer>
 <script src="./assets/js/script.js"></script>
 <script>
+
+  arr = JSON.parse(localStorage.getItem("userData"))
+  console.log(arr);
+  document.getElementById("profile").addEventListener("click",function(){
+    if(!arr==null){
+      window.location.href="./profile/profile.html"
+    }else{
+      window.location.href="./login/signin.html"
+  }
+  })
   
 </script>
 </body>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,50 @@
     <title>Document</title>
     <link rel="stylesheet" href="../assets/css/profile.css">
 </head>
+
 <body>
     <div class="container">
-        <aside>asdf</aside>
-    <main>
-        <h1>Name</h1>
-        <p>Pranaw M</p>
-        <h1>Email</h1>
-        <p>mdpranaw@gmail.com</p>
-        <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus unde corporis recusandae praesentium fugiat! Numquam, reiciendis dolorum nihil facere culpa ipsum ut dolor deserunt minima perferendis eaque non quam nobis.</p>
-        <div class="courseComplete">
-            <img src="../assets/img/joystick.png" alt="">
-            <p>Web Hacking</p>
-            <input type="range" name="" id="">
-        </div>
-    </main>
+        <aside>
+            <img src="https://i.pinimg.com/originals/7e/e0/a7/7ee0a7d3d8bfb6f70c732cb50754715b.jpg" alt="">
+        </aside>
+        <main>
+            <div class="firstSection">
+                <div>
+                    <h1>Name</h1>
+                    <p id="name">Pranaw M</p>
+                </div>
+                <div>
+                    <h1>Email</h1>
+                    <p id="email">mdpranaw@gmail.com</p>
+                </div>
+            </div>
+            <h1>Course Completion</h1>
+            <div class="courseComplete">
+
+                <img src="../assets/img/joystick.png" alt="">
+                <p>Web Hacking</p>
+                <input type="range" name="" id="">
+            </div>
+            <div class="achievementsSection">
+                <h1>Achievements</h1>
+                <div class="achievements">
+                    <img src="https://static.vecteezy.com/system/resources/previews/002/349/754/original/modern-elegant-certificate-template-free-vector.jpg"
+                        alt="">
+                    <img src="https://static.vecteezy.com/system/resources/previews/002/349/754/original/modern-elegant-certificate-template-free-vector.jpg"
+                        alt="">
+                </div>
+
+            </div>
+        </main>
     </div>
+    <script>
+        const arr = JSON.parse(localStorage.getItem("userData"))
+        for (let i = 0; i < arr.length; i++) {
+
+            document.getElementById("name").innerText = arr[i]["firstname"];
+            document.getElementById("email").innerText = arr[i]["email"];
+        }
+    </script>
 </body>
+
 </html>

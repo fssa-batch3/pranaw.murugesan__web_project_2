@@ -9,7 +9,7 @@
 //     e.preventDefault();
 // })
 
-document.querySelector("#dontHaveAccount").addEventListener("click",function(e){
-    e.preventDefault();
-    window.location.href="./signup.html";
-})
+// document.querySelector("#dontHaveAccount").addEventListener("click",function(e){
+//     e.preventDefault();
+//     window.location.href="./signup.html";
+// })
