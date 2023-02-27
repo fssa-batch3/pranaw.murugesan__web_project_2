@@ -87,3 +87,9 @@ a{
   margin-bottom: 5vh;
   cursor: pointer;
 }
+
+/* mailspoof */
+
+.emailspoof{
+  margin-top: 5%;
+}

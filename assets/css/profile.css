@@ -1,44 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-body{
-    background-color: whitesmoke;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:  'Poppins', sans-serif;
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-.container{
-    display: flex;
-}
-aside{
-    width: 30%;
-    height: 100;
-    padding-left: 5%;
-    padding-right: 5%;
-    
-}
-aside img{
-    width: 100%;
-    margin-top: 10%;
-    border-radius: 5%;
-}
-main{
-    padding-right: 10%;
-    padding-left: 10%;
-}
-.courseComplete{
-    background-color: aqua;
-    display: flex;
-}
-.firstSection{
-    display: flex;
-}
-.firstSection div:last-child{
-    margin-left: 10%;
-}
-.achievements img{
-    width: 50%;
-    margin-right: 3%;
-    display: flex;
 
+header {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background-color: #3795BD;
+    margin-right: 7%;
+  }
+  header > nav {
+    display: flex;
+  }
+  button {
+    border-radius: 1rem;
+    padding: 5%;
+    padding-right: 1em;
+    padding-left: 1em;
+    border: none;
+    font-size: 1.2rem;
+    background-color: white;
+  }
+  a {
+    margin-right: 1em;
+    margin-top: 2em;
+  }
+
+.container {
+  display: flex;
+}
+aside {
+  width: 30%;
+  height: 100;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-transform: uppercase;
+}
+aside img {
+  width: 150%;
+  margin-top: 10%;
+  border-radius: 5%;
+}
+main {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.courseComplete {
+  background-color: aqua;
+  display: flex;
+}
+.firstSection {
+  display: flex;
+}
+.firstSection div:last-child {
+  margin-left: 10%;
+}
+.achievements img {
+  width: 50%;
+  margin-right: 3%;
+  display: flex;
+  margin-bottom: 5%;
+}
+#welcome {
+  margin-left: 5%;
 }

@@ -113,9 +113,9 @@
 <script>
 
   arr = JSON.parse(localStorage.getItem("userData"))
-  console.log(arr);
+  
   document.getElementById("profile").addEventListener("click",function(){
-    if(!arr==null){
+    if(arr){
       window.location.href="./profile/profile.html"
     }else{
       window.location.href="./login/signin.html"

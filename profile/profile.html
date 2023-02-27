@@ -10,27 +10,44 @@
 </head>
 
 <body>
+    <header>
+    
+        <div>
+          <h2>Scriptify</h2>
+        </div>
+        <nav>
+          <a href="../index.html"><button>Home</button></a>
+          <a href="../course/course.html"><button>Courses</button></a>
+          <a href="#"><button>About</button></a>
+          <a><button id="profile">Profile</button></a>
+        </nav>
+      </header>
+
+    <h1 id="welcome"></h1>
+    
     <div class="container">
         <aside>
             <img src="https://i.pinimg.com/originals/7e/e0/a7/7ee0a7d3d8bfb6f70c732cb50754715b.jpg" alt="">
+            
+                <div>
+                    <h1 id="name">Name</h1>
+                </div>
+                <div>
+                    <h1 id="email">Email</h1>
+                </div>
+            
         </aside>
         <main>
-            <div class="firstSection">
-                <div>
-                    <h1>Name</h1>
-                    <p id="name">Pranaw M</p>
-                </div>
-                <div>
-                    <h1>Email</h1>
-                    <p id="email">mdpranaw@gmail.com</p>
-                </div>
-            </div>
+            
             <h1>Course Completion</h1>
             <div class="courseComplete">
 
                 <img src="../assets/img/joystick.png" alt="">
-                <p>Web Hacking</p>
-                <input type="range" name="" id="">
+                <div>
+                    <strong>Things you should know</strong>
+                <p>Basics things that need for a hacker</p>
+                <input type="range" name="" id="" disabled>    
+            </div>
             </div>
             <div class="achievementsSection">
                 <h1>Achievements</h1>
@@ -45,11 +62,14 @@
         </main>
     </div>
     <script>
+        
+        
         const arr = JSON.parse(localStorage.getItem("userData"))
         for (let i = 0; i < arr.length; i++) {
 
             document.getElementById("name").innerText = arr[i]["firstname"];
             document.getElementById("email").innerText = arr[i]["email"];
+            document.getElementById("welcome").innerText ='Welcome '+ arr[i]["firstname"]
         }
     </script>
 </body>
