@@ -42,7 +42,7 @@
     </div>
     <div class="mb-3">
       <label for="password" class="form-label">Password</label>
-      <input type="password" class="form-control" id="password">
+      <input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" class="form-control" id="password">
     </div>
     <button class="btn btn-primary">Login</button>
     <button id="dontHaveAccount" class="btn btn-link">Don't have account</button>

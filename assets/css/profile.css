@@ -71,3 +71,66 @@ main {
 #welcome {
   margin-left: 5%;
 }
+.switch{
+  display: flex;
+  justify-content: space-between;
+}
+
+.switch > #switch {
+padding:.5%;
+background-color: #3795BD;
+margin-top: 2%;
+margin-bottom: 3%;
+border-radius: 15%;
+cursor: pointer;
+}
+.edit{
+  position: fixed;
+  background-color: white;
+  width: 50%;
+  height: 40vh;
+  margin-left: 20%;
+  display: none;
+  font-size: 1.5rem;
+  padding: 3%;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;; */
+  box-shadow:5px 5px 100px 5px black ;
+  
+}
+.edit div{
+  display: flex;
+}
+.edit input{
+  padding: 2%;
+  width: 94%;
+   margin-top: 2%;
+   margin-right: 2%;
+   font-size: 1.5rem;
+
+}
+.edit button{
+  background-color: green;
+margin-top: 5%;
+margin-right: 3%;
+  padding:2%;
+border-radius: 15%;
+cursor: pointer;
+
+}
+.edit button:last-child{
+  background-color: lightcoral;
+}
+.view{
+  display: block;
+  z-index: 100;
+}
+.gender{
+  width: 40%;
+  margin-top: 5%;
+}
+#editProfile{
+  background-color: lightskyblue;
+}
+#Save, #Cancel{
+  color: white;
+}
