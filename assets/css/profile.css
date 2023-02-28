@@ -56,6 +56,9 @@ main {
   background-color: aqua;
   display: flex;
 }
+.courseComplete > div{
+  margin-left: 5%;
+}
 .firstSection {
   display: flex;
 }

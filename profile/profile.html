@@ -23,7 +23,7 @@
         </nav>
     </header>
 
-   
+
     <form class="edit">
         <div>
 
@@ -55,7 +55,7 @@
         <a id="switch">Switch Accounts</a>
     </div>
     <div class="container">
-        
+
         <aside>
             <img src="https://i.pinimg.com/originals/7e/e0/a7/7ee0a7d3d8bfb6f70c732cb50754715b.jpg" alt="">
 
@@ -99,12 +99,19 @@
 
 
         const arr = JSON.parse(localStorage.getItem("userData"))
+        let email = document.getElementById("email");
+
+        
+        let editFname = document.getElementById("editfname")
+        let editLname =   document.getElementById("editlname")
+        let editEmail =document.getElementById("editEmail")
+
         for (let i = 0; i < arr.length; i++) {
 
             document.getElementById("name").innerText = arr[i]["firstname"];
-            document.getElementById("editfname").value = arr[i]["firstname"];
-            document.getElementById("editlname").value = arr[i]["lastname"];
-            document.getElementById("email").innerText = arr[i]["email"];
+            editFname.value = arr[i]["firstname"];
+            editLname.value = arr[i]["lastname"];
+            email.innerText = arr[i]["email"];
             document.getElementById("editEmail").value = arr[i]["email"];
             document.getElementById("welcome").innerText = 'Welcome ' + arr[i]["firstname"] + " " + arr[i]["lastname"] + " 🖖"
         }
@@ -120,6 +127,21 @@
             document.querySelector(".container").style.filter = "blur(8px)"
             document.querySelector("header").style.filter = "blur(8px)"
             document.querySelector(".switch").style.filter = "blur(8px)"
+        })
+
+        document.getElementById("Save").addEventListener("click", () => {
+            
+            arr.find(f =>{
+                if(editEmail.value == f["email"]){
+                f["firstname"] = editFname.value;
+                f["lastname"] = editLname.value;
+
+                localStorage.setItem("userData",JSON.stringify(arr))
+            }
+                
+            })
+
+        
         })
         document.getElementById("Cancel").addEventListener("click", function () {
             window.location.href = "./profile.html"
