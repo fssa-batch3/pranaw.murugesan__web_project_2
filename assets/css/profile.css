@@ -137,3 +137,9 @@ cursor: pointer;
 #Save, #Cancel{
   color: white;
 }
+.profileIcon{
+  width: 20%;
+  height: 15vh;
+  border-radius: 50%;
+  background-color: black;
+}
