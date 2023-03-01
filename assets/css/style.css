@@ -61,11 +61,12 @@ a {
   border-radius: 2%;
   color: red ;
   height: 35vh;
-  background-color:gainsboro ;
+  background-color:whitesmoke ;
   box-shadow: 2px 2px 20px  gray;
 }
 .learn > img {
   margin-top: 10%;
+  width: 30%;
 }
 .learn > h1 {
   margin-top: 10%;
