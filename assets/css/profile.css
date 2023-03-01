@@ -9,29 +9,29 @@ body {
 }
 
 header {
-    justify-content: space-between;
-    display: flex;
-    width: 100%;
-    height: 15vh;
-    background-color: #3795BD;
-    margin-right: 7%;
-  }
-  header > nav {
-    display: flex;
-  }
-  button {
-    border-radius: 1rem;
-    padding: 5%;
-    padding-right: 1em;
-    padding-left: 1em;
-    border: none;
-    font-size: 1.2rem;
-    background-color: white;
-  }
-  a {
-    margin-right: 1em;
-    margin-top: 2em;
-  }
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  background-color: #3795bd;
+  margin-right: 7%;
+}
+header > nav {
+  display: flex;
+}
+button {
+  border-radius: 1rem;
+  padding: 5%;
+  padding-right: 1em;
+  padding-left: 1em;
+  border: none;
+  font-size: 1.2rem;
+  background-color: white;
+}
+a {
+  margin-right: 1em;
+  margin-top: 2em;
+}
 
 .container {
   display: flex;
@@ -53,10 +53,10 @@ main {
   padding-left: 10%;
 }
 .courseComplete {
-  background-color: aqua;
+background-color: darkcyan;
   display: flex;
 }
-.courseComplete > div{
+.courseComplete > div {
   margin-left: 5%;
 }
 .firstSection {
@@ -74,20 +74,22 @@ main {
 #welcome {
   margin-left: 5%;
 }
-.switch{
+.switch {
   display: flex;
   justify-content: space-between;
 }
 
 .switch > #switch {
-padding:.5%;
-background-color: #3795BD;
-margin-top: 2%;
-margin-bottom: 3%;
-border-radius: 15%;
-cursor: pointer;
+  padding: 0.5%;
+  background-color: #3795bd;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  border-radius: 15%;
+  cursor: pointer;
 }
-.edit{
+
+/* Edit Profile Section */
+.edit {
   position: fixed;
   background-color: white;
   width: 50%;
@@ -96,50 +98,50 @@ cursor: pointer;
   display: none;
   font-size: 1.5rem;
   padding: 3%;
-  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;; */
-  box-shadow:5px 5px 100px 5px black ;
-  
+  box-shadow: 5px 5px 100px 5px black;
 }
-.edit div{
+/* Flexing  */
+.edit div {
   display: flex;
 }
-.edit input{
+.edit input {
   padding: 2%;
   width: 94%;
-   margin-top: 2%;
-   margin-right: 2%;
-   font-size: 1.5rem;
-
+  margin-top: 2%;
+  margin-right: 2%;
+  font-size: 1.5rem;
 }
-.edit button{
+.edit button {
   background-color: green;
-margin-top: 5%;
-margin-right: 3%;
-  padding:2%;
-border-radius: 15%;
-cursor: pointer;
-
+  margin-top: 5%;
+  margin-right: 3%;
+  padding: 2%;
+  border-radius: 15%;
+  cursor: pointer;
 }
-.edit button:last-child{
+.edit button:last-child {
   background-color: lightcoral;
 }
-.view{
+.view {
   display: block;
   z-index: 100;
 }
-.gender{
+.gender {
   width: 40%;
   margin-top: 5%;
 }
-#editProfile{
+#editProfile {
   background-color: lightskyblue;
 }
-#Save, #Cancel{
+#deleteProfile {
+  background-color: red;
   color: white;
 }
-.profileIcon{
-  width: 20%;
-  height: 15vh;
-  border-radius: 50%;
-  background-color: black;
+#Save,
+#Cancel {
+  color: white;
+}
+.dangerZone {
+  color: red;
+  text-decoration: overline;
 }

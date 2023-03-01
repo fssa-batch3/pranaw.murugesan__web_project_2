@@ -10,8 +10,8 @@
 </head>
 
 <body>
+    <!-- Header section Starts -->
     <header>
-
         <div>
             <h2>Scriptify</h2>
         </div>
@@ -22,17 +22,15 @@
             <a><button id="profile">Profile</button></a>
         </nav>
     </header>
+    <!-- Header section Ends -->
 
-
+<!-- Edit Profile Form -->
     <form class="edit">
-        <div>
-            <div class="profileIcon"></div>
-        </div>
+        
         <div>
             <input type="text" name="fname" id="editfname" placeholder="First Name">
             <input type="text" name="lname" id="editlname" placeholder="Last Name">
         </div>
-
         <input type="email" name="lname" id="editEmail" disabled>
 
         <div class="gender">
@@ -47,14 +45,16 @@
             <button id="Save">Save</button>
             <button id="Cancel">Cancel</button>
         </div>
-
     </form>
+
+    <!-- Showing Welcome Text and Switch Account Btn -->
     <div class="switch">
         <h1 id="welcome"></h1>
         <a id="switch">Switch Accounts</a>
     </div>
-    <div class="container">
 
+    <div class="container">
+        <!-- Left Side container //Aside -->
         <aside>
             <img src="https://i.pinimg.com/originals/7e/e0/a7/7ee0a7d3d8bfb6f70c732cb50754715b.jpg" alt="">
 
@@ -65,11 +65,12 @@
                 <h1 id="email">Email</h1>
             </div>
             <button id="editProfile">Edit Profile</button>
+            <div class="dangerZone">
+                <h1>Danger zone</h1>
+                <button id="deleteProfile">Delete Profile</button>
+            </div>
 
         </aside>
-        <div>
-
-        </div>
         <main>
 
             <h1>Course Completion</h1>
@@ -92,35 +93,41 @@
                 </div>
 
             </div>
-            <div class="dangerSection">
-                
-            </div>
         </main>
     </div>
     <script>
 
 
-        const arr = JSON.parse(localStorage.getItem("userData"))
+
+        const arr = JSON.parse(localStorage.getItem("userData")) // getting data from localStorage
+
+        //assigning variables
         let email = document.getElementById("email");
-
-        
         let editFname = document.getElementById("editfname")
-        let editLname =   document.getElementById("editlname")
-        let editEmail =document.getElementById("editEmail")
+        let editLname = document.getElementById("editlname")
+        let editEmail = document.getElementById("editEmail")
+        let name = document.getElementById("name")
+        let welcomeText = document.getElementById("welcome")
 
+        // showing datas in Profile Page
         for (let i = 0; i < arr.length; i++) {
 
-            document.getElementById("name").innerText = arr[i]["firstname"];
+            name.innerText = arr[i]["firstname"] +" "+ arr[i]["lastname"];
             editFname.value = arr[i]["firstname"];
             editLname.value = arr[i]["lastname"];
             email.innerText = arr[i]["email"];
-            document.getElementById("editEmail").value = arr[i]["email"];
-            document.getElementById("welcome").innerText = 'Welcome ' + arr[i]["firstname"] + " " + arr[i]["lastname"] + " 🖖"
+            editEmail.value = arr[i]["email"];
+            welcomeText.innerText = 'Hiii Chelloo !!! ' + " 🖖"
         }
-        document.getElementById("welcome").style.textTransform = "Uppercase";
+
+        welcomeText.style.textTransform = "Uppercase"; //UpperCasing Welcome Text
+        
+        //Switch accounts btn
         document.getElementById("switch").addEventListener('click', function () {
             window.location.href = "../login/signin.html";
         })
+
+        //Edit Profile
         document.getElementById("editProfile").addEventListener("click", function () {
 
             let editForm = document.getElementsByClassName("edit")
@@ -131,23 +138,27 @@
             document.querySelector(".switch").style.filter = "blur(8px)"
         })
 
+        //showing datas in edit profile div
         document.getElementById("Save").addEventListener("click", () => {
-            
-            arr.find(f =>{
-                if(editEmail.value == f["email"]){
-                f["firstname"] = editFname.value;
-                f["lastname"] = editLname.value;
+            arr.find(f => {
+                if (editEmail.value == f["email"]) {
+                    f["firstname"] = editFname.value;
+                    f["lastname"] = editLname.value;
 
-                localStorage.setItem("userData",JSON.stringify(arr))
-            }
-                
+                    localStorage.setItem("userData", JSON.stringify(arr))
+                }
             })
-
-        
         })
+
+        //Cancel btn in Edit Profile
         document.getElementById("Cancel").addEventListener("click", function () {
             window.location.href = "./profile.html"
         })
+        //Delete profile Btn
+        document.getElementById("deleteProfile").addEventListener("click", function () {
+            confirm("Are you Sure, You want to delete your Profile? ")
+        })
+
     </script>
 </body>
 

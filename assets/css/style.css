@@ -47,7 +47,7 @@ a {
 }
 .heroSection {
   margin-top: 5%;
-  height: 82vh;
+  height: 70vh;
 }
 .firstSection > h1 {
   font-size: 4rem;
@@ -71,6 +71,7 @@ a {
   margin-top: 10%;
 }
 .learningDiv {
+  margin-top: 5%;
   display: flex;
   justify-content: space-around;
 }
