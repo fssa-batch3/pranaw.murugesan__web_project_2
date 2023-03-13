@@ -17,16 +17,16 @@
         </div>
         <nav>
             <a href="../index.html"><button>Home</button></a>
-            <a href="../course/course.html"><button>Courses</button></a>
+            <a href="../course.html"><button>Courses</button></a>
             <a href="#"><button>About</button></a>
             <a><button id="profile">Profile</button></a>
         </nav>
     </header>
     <!-- Header section Ends -->
 
-<!-- Edit Profile Form -->
+    <!-- Edit Profile Form -->
     <form class="edit">
-        
+
         <div>
             <input type="text" name="fname" id="editfname" placeholder="First Name">
             <input type="text" name="lname" id="editlname" placeholder="Last Name">
@@ -100,6 +100,10 @@
 
 
         const arr = JSON.parse(localStorage.getItem("userData")) // getting data from localStorage
+        const profile = JSON.parse(localStorage.getItem("profile"))
+        console.log(profile)
+        let check;
+        let res;
 
         //assigning variables
         let email = document.getElementById("email");
@@ -110,18 +114,20 @@
         let welcomeText = document.getElementById("welcome")
 
         // showing datas in Profile Page
-        for (let i = 0; i < arr.length; i++) {
-
-            name.innerText = arr[i]["firstname"] +" "+ arr[i]["lastname"];
-            editFname.value = arr[i]["firstname"];
-            editLname.value = arr[i]["lastname"];
-            email.innerText = arr[i]["email"];
-            editEmail.value = arr[i]["email"];
-            welcomeText.innerText = 'Hiii Chelloo !!! ' + " 🖖"
-        }
+        arr.find(element=>{
+            if(element["email"] == profile["email"]){
+                return res = element
+            }
+        })
+            name.innerText = res["firstname"] + " " + res["lastname"];
+            editFname.value = res["firstname"];
+            editLname.value = res["lastname"];
+            email.innerText = res["email"];
+            editEmail.value = res["email"];
+            welcomeText.innerText = `Hiii  ${res["firstname"]} !!` + " 🖖"
 
         welcomeText.style.textTransform = "Uppercase"; //UpperCasing Welcome Text
-        
+
         //Switch accounts btn
         document.getElementById("switch").addEventListener('click', function () {
             window.location.href = "../login/signin.html";
@@ -139,13 +145,16 @@
         })
 
         //showing datas in edit profile div
-        document.getElementById("Save").addEventListener("click", () => {
+
+        document.getElementById("Save").addEventListener("click", (e) => {
+            // e.preventDefault();
             arr.find(f => {
-                if (editEmail.value == f["email"]) {
+                if ( f["email"]==editEmail.value) {
                     f["firstname"] = editFname.value;
                     f["lastname"] = editLname.value;
 
                     localStorage.setItem("userData", JSON.stringify(arr))
+                    return check = f;
                 }
             })
         })
@@ -154,11 +163,25 @@
         document.getElementById("Cancel").addEventListener("click", function () {
             window.location.href = "./profile.html"
         })
+
         //Delete profile Btn
         document.getElementById("deleteProfile").addEventListener("click", function () {
-            confirm("Are you Sure, You want to delete your Profile? ")
+
+            let confirmMessage = confirm("are you want to delete your profile")
+            if (confirmMessage == true) {
+                for (let k = 0; k < arr.length; k++) {
+                    if (editEmail.value == arr[k]["email"]) {
+                        arr.splice(k, 1)
+                        localStorage.removeItem("profile");
+                        localStorage.setItem("userData", JSON.stringify(arr))
+                        window.location.href = "../login/signin.html"
+                    }
+                }
+            }
         })
 
+
+           
     </script>
 </body>
 

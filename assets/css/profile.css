@@ -55,6 +55,7 @@ main {
 .courseComplete {
 background-color: darkcyan;
   display: flex;
+  padding: 2%;
 }
 .courseComplete > div {
   margin-left: 5%;

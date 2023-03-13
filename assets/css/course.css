@@ -19,6 +19,11 @@ header {
   padding-right: 7%;
   background-color: #3795BD;
 }
+header div h2{
+  margin-top: 15%;
+  margin-left: 15%;
+  color: white;
+}
 header > nav {
   display: flex;
   z-index: 100;
@@ -39,15 +44,19 @@ a {
 
 .container{
   width: 22%;
+  color: white;
   background-color: #82AAE3;
   margin: 5%;
   text-align: center;
   height:55vh;
-  border-radius: 2%;
+  border-radius: 5%;
   padding-top: 3%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.5s;
 }
 .container:hover{
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  
   transform: scale(1.1);
   transition: 0.5s;
 }
@@ -71,3 +80,12 @@ main{
   padding-top:1% ;
 }
 
+.learnBtn:hover{
+  background-color: yellowgreen;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.upcoming{
+  opacity: 50%;
+  background-color: gray}

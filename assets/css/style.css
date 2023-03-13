@@ -17,7 +17,11 @@ header {
   margin-bottom: 20vh;
   height: 10vh;
 }
-
+header div h2{
+  margin-top: 15%;
+  margin-left: 15%;
+  color: white;
+}
 header > nav {
   display: flex;
   z-index: 100;

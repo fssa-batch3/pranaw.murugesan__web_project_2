@@ -24,6 +24,11 @@ header {
   position: sticky;
   top: 0;
 }
+header div h2{
+  margin-top: 15%;
+  margin-left: 15%;
+  color: white;
+}
 header > div > img {
   height: 100%;
 }

@@ -1,15 +1,16 @@
-// document.querySelector("#learnBtn").addEventListener("click",function(){
-//     window.location.href="./course/course.html";
-// })
-// document.querySelector("#profile").addEventListener("click",function(){
-//     window.location.href="./login/signin.html";
-// })
+// index page
+const storage = JSON.parse(localStorage.getItem("userData"))
 
-// document.querySelector("form").addEventListener("submit",function(e){
-//     e.preventDefault();
-// })
+document.getElementById("profile").addEventListener("click",function(){
+  if(storage){
+    window.location.href="./login/signin.html"
+  }else{
+    window.location.href="./profile/profile.html"
+}
+})
 
-// document.querySelector("#dontHaveAccount").addEventListener("click",function(e){
-//     e.preventDefault();
-//     window.location.href="./signup.html";
-// })
+
+
+//   document.querySelector("#courseProfile").addEventListener('click',function(){
+//     window.location.href = "./login/signin.html"
+//   })

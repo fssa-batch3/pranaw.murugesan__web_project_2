@@ -25,9 +25,8 @@
     </div>
     <nav>
       <a href="#"><button>Home</button></a>
-      <a href="./course/course.html"><button>Courses</button></a>
+      <a href="./course.html"><button>Course</button></a>
       <a href="#"><button>About</button></a>
-      <a><button id="profile">Profile</button></a>
     </nav>
     <img id="wave" src="./assets/img/wave-haikei.png" alt="">
   </header>
@@ -80,7 +79,7 @@
     </div>
   </div>
   <hr>
-    <button id="learnBtn" type="button" class="btn btn-info">Start Learning</button>
+    <button id="profile" type="button" class="btn btn-info">Start Learning</button>
 
 <footer>
   <img id="footerBg" src="./assets/img/wave-haikei (1).png" alt="">
@@ -117,13 +116,14 @@
   
   document.getElementById("profile").addEventListener("click",function(){
     if(arr){
-      window.location.href="./profile/profile.html"
-    }else{
       window.location.href="./login/signin.html"
+    }else{
+      window.location.href="./profile/profile.html"
   }
   })
   
-</script>
+</script> 
+ <script src="./assets/js/script.js"></script>
 </body>
 
 

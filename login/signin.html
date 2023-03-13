@@ -27,7 +27,7 @@
     </div>
     <nav>
       <a href="../index.html"><button>Home</button></a>
-      <a href="../course/course.html"><button>Courses</button></a>
+      <a href="../course.html"><button>Courses</button></a>
       <a href="#"><button>About</button></a>
       <a href="./signin.html"><button>Profile</button></a>
     </nav>
@@ -45,8 +45,8 @@
       <input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" class="form-control" id="password">
     </div>
     <button class="btn btn-primary">Login</button>
-    <button id="dontHaveAccount" class="btn btn-link">Don't have account</button>
   </form>
+  <button id="dontHaveAccount" class="btn btn-link dontHaveAccount">Don't have account</button>
 
 
   <script>
@@ -62,7 +62,9 @@
       const password = document.getElementById("password").value;
       const arr = JSON.parse(localStorage.getItem("userData"))
 
-
+      let login ={
+        "email": email
+      }
       let res;
       arr.find(element => {
         if (element["email"] == email && element["password"] == password) {
@@ -73,6 +75,7 @@
       })
       if (res === 1) {
         alert("Logged in")
+        localStorage.setItem("profile",JSON.stringify(login))
         window.location.href = "../profile/profile.html"
       } else {
         alert('none')
