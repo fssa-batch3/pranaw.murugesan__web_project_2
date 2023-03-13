@@ -1,55 +1,55 @@
 // course page
 const cards = [
     {
-      imgSource: "../assets/img/bar-chart.png",
+      imgSource: "./assets/img/bar-chart.png",
       title: "Things you should know",
       desc: "Basics things that need for a hacker",
       redirection:"stages"
     },
     {
-      imgSource: "../assets/img/webhack.png",
+      imgSource: "./assets/img/webhack.png",
       title: "Web Hacking",
       desc: "Things Which hackers do with web ",
       redirection:"webhack"
     },
     {
-      imgSource: "../assets/img/mobileHack.png",
+      imgSource: "./assets/img/mobileHack.png",
       title: "Hacking through mobile",
       desc: "Things Which hackers do with phone",
       redirection:"mobilehack"
     },
     {
-      imgSource: "../assets/img/cross-site.png",
+      imgSource: "./assets/img/cross-site.png",
       title: "Cross-site script inclusion",
       desc: "Basics things that need for a hacker",
       redirection:""
     },
     {
-      imgSource: "../assets/img/kalilinux.png",
+      imgSource: "./assets/img/kalilinux.png",
       title: "Kali Linux Course",
       desc: "Basics things that need for a hacker",
       redirection:""
     },
     {
-      imgSource: "../assets/img/humanhacking.png",
+      imgSource: "./assets/img/humanhacking.png",
       title: "Human Hacking",
       desc: "Basics things that need for a hacker",
       redirection:""
     },
     {
-      imgSource: "../assets/img/malverting.png",
+      imgSource: "./assets/img/malverting.png",
       title: "Malverting",
       desc: "Basics things that need for a hacker",
       redirection:""
     },
     {
-      imgSource: "../assets/img/networksecurity.png",
+      imgSource: "./assets/img/networksecurity.png",
       title: "Network Security",
       desc: "Basics things that need for a hacker",
       redirection:""
     },
     {
-      imgSource: "../assets/img/scripting.png",
+      imgSource: "./assets/img/scripting.png",
       title: "Scripting",
       desc: "Basics things that need for a hacker",
       redirection:""
