@@ -21,8 +21,6 @@ header {
   width: 100%;
   margin-bottom: 10vh;
   height: 10vh;
-  position: sticky;
-  top: 0;
 }
 header div h2{
   margin-top: 15%;
@@ -66,6 +64,7 @@ aside{
     width: 15%;
     height: 50vh;
     border-radius: 2%;
+    margin-top: 0;
     
 }
 a{
@@ -73,8 +72,12 @@ a{
   text-decoration: none;
   color: black;
 }
+main a {
+  color: blue;
+  text-decoration: underline;
+}
 .termuxPlayStore{
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 .termuxInterfaceBlock{

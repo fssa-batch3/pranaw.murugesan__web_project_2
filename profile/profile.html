@@ -16,8 +16,7 @@
             <h2>Scriptify</h2>
         </div>
         <nav>
-            <a href="../index.html"><button>Home</button></a>
-            <a href="../course.html"><button>Courses</button></a>
+            <a href="../course/course.html"><button>Home</button></a>
             <a href="#"><button>About</button></a>
             <a><button id="profile">Profile</button></a>
         </nav>
@@ -37,7 +36,7 @@
             <input type="radio" name="fname" id="">
             <label for="male">Male</label>
 
-            <input type="radio" name="fname" id="">
+            <input type="radio" name="fname" id="" placeholder="kjnkj">
             <label for="male">Female</label>
         </div>
 
@@ -117,6 +116,7 @@
         arr.find(element=>{
             if(element["email"] == profile["email"]){
                 return res = element
+                
             }
         })
             name.innerText = res["firstname"] + " " + res["lastname"];

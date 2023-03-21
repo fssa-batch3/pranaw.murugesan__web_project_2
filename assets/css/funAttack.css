@@ -63,3 +63,34 @@ aside{
     border-radius: 2%;
     
 }
+
+/* termux Walkthrough page */
+
+.termuxImage{
+  margin-bottom: 2%;
+  width: 50%;
+  height: 80%;
+}
+.cmatrix{
+  width: 50%;
+  height: 70vh;
+  margin-bottom: 2%;
+}
+.cmatrix:last-child{
+  width: 80%;
+  height: 80%;
+}
+
+/* Linux Commands */
+
+td,th{
+  padding: 1%;
+  border: 2px solid black;
+}
+table{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+code{
+  /* background-color: lightgray; */
+}
