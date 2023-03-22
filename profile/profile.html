@@ -75,12 +75,13 @@
             <h1>Course Completion</h1>
             <div class="courseComplete">
 
-                <img src="../assets/img/joystick.png" alt="">
+                <img class="courseImg" src="../assets/img/bar-chart.png" alt="">
                 <div>
                     <strong>Things you should know</strong>
                     <p>Basics things that need for a hacker</p>
                     <input type="range" name="" id="" disabled>
                 </div>
+                <button>Resume</button>
             </div>
             <div class="achievementsSection">
                 <h1>Achievements</h1>
@@ -100,7 +101,7 @@
 
         const arr = JSON.parse(localStorage.getItem("userData")) // getting data from localStorage
         const profile = JSON.parse(localStorage.getItem("profile"))
-        console.log(profile)
+        // console.log(profile)
         let check;
         let res;
 

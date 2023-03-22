@@ -53,12 +53,17 @@ main {
   padding-left: 10%;
 }
 .courseComplete {
-background-color: darkcyan;
+  background-color: darkcyan;
   display: flex;
   padding: 2%;
+  justify-content: space-around;
+  border-radius: 5%;
 }
 .courseComplete > div {
   margin-left: 5%;
+}
+.courseImg{
+  width: 20%;
 }
 .firstSection {
   display: flex;
