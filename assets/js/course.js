@@ -3,13 +3,13 @@ const cards = [
     {
       imgSource: "../assets/img/bar-chart.png",
       title: "Things you should know",
-      desc: "Basics things that need for a hacker",
+      desc: "Basic things that you should know about hacking before getting into this",
       redirection:"stages"
     },
     {
       imgSource: "../assets/img/webhack.png",
       title: "Web Hacking",
-      desc: "Things Which hackers do with web ",
+      desc: "Things which are all done by hackers by web",
       redirection:"webhack"
     },
     {
@@ -21,37 +21,37 @@ const cards = [
     {
       imgSource: "../assets/img/cross-site.png",
       title: "Cross-site script inclusion",
-      desc: "Basics things that need for a hacker",
+      desc: "XSS attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites",
       redirection:""
     },
     {
       imgSource: "../assets/img/kalilinux.png",
       title: "Kali Linux Course",
-      desc: "Basics things that need for a hacker",
+      desc: "Kali Linux is not about its tools, nor the operating system. Kali Linux is a platform.",
       redirection:""
     },
     {
       imgSource: "../assets/img/humanhacking.png",
       title: "Human Hacking",
-      desc: "Basics things that need for a hacker",
+      desc: "A global security expert draws on psychological insights to help you master the art of social engineering",
       redirection:""
     },
     {
       imgSource: "../assets/img/malverting.png",
       title: "Malverting",
-      desc: "Basics things that need for a hacker",
+      desc: "a relatively new cyberattack technique that injects malicious code within digital ads",
       redirection:""
     },
     {
       imgSource: "../assets/img/networksecurity.png",
       title: "Network Security",
-      desc: "Basics things that need for a hacker",
+      desc: "Network security is any activity designed to protect the usability and integrity of your network and data.",
       redirection:""
     },
     {
       imgSource: "../assets/img/scripting.png",
       title: "Scripting",
-      desc: "Basics things that need for a hacker",
+      desc: "a programming language that employs a high-level construct to interpret and execute one command at a time",
       redirection:""
     },
   ]

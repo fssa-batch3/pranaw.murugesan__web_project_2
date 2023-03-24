@@ -51,6 +51,7 @@ a {
   height:55vh;
   border-radius: 5%;
   padding-top: 3%;
+  padding: 1%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 0.5s;
 }
