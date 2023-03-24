@@ -86,11 +86,11 @@ if(i>2){
   document.querySelector("div.container").append(startLearn)
 }
 document.querySelector("#stages").addEventListener("click",function(){
-    window.location.href="../pages/thingsShouldKnowIntro.html"
+    window.location.href="../learning_pages/thingsShouldKnowIntro.html"
   })
   document.querySelector("#webhack").addEventListener("click",function(){
-    window.location.href="../pages/webhackingintro.html"
+    window.location.href="../learning_pages/webhackingintro.html"
   })
   document.querySelector("#mobilehack").addEventListener("click",function(){
-    window.location.href="../pages/mobileHackingIntro.html"
+    window.location.href="../learning_pages/mobileHackingIntro.html"
   })
