@@ -32,6 +32,8 @@
     <img id="wave" src="../assets/img/wave-haikei.png" alt="">
   </header>
   <!-- header end -->
+
+  <!-- Form starts here -->
   <form id="form">
     <div class="mb-3">
       <label for="fname" class="form-label">Enter Your First Name</label>
@@ -55,15 +57,12 @@
 
 
   <script>
-
-
     document.getElementById("form").addEventListener("submit", (e) => {
       e.preventDefault();
       signup();
-      
-
     })
     const signup = () => {
+      // Initialising variables
       const fname = document.getElementById("fname").value;
       const lname = document.getElementById("lname").value;
       const email = document.getElementById("email").value;
@@ -79,8 +78,6 @@
 
         }
       let users = JSON.parse(localStorage.getItem("userData"));
-
-
       let res;
 
       if (users) {
