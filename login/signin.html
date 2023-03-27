@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 
@@ -54,15 +54,15 @@
       e.preventDefault();
       login()
     })
-    document.getElementById('dontHaveAccount').addEventListener("click",function(){
-      window.location.href="./signup.html"
+    document.getElementById('dontHaveAccount').addEventListener("click", function () {
+      window.location.href = "./signup.html"
     })
     function login() {
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
       const arr = JSON.parse(localStorage.getItem("userData"))
 
-      let login ={
+      let login = {
         "email": email
       }
       let res;
@@ -74,14 +74,18 @@
         }
       })
       if (res === 1) {
-        alert("Logged in")
-        localStorage.setItem("profile",JSON.stringify(login))
-        window.location.href = "../course/course.html"
+        // alert("Logged in")
+        swal("Hooyah !", "You have logged in !")
+          .then((value) => {
+            localStorage.setItem("profile", JSON.stringify(login))
+            window.location.href = "../course/course.html"
+          });
+
       } else {
-        alert('Account doesn\'t exist')
+        // alert('Account doesn\'t exist')
+        swal("Sorry :(", "Account doesn't exist!", "error");
+
       }
-
-
     }
 
   </script>
