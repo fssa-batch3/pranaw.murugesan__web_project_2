@@ -139,6 +139,9 @@ footer{
 .footer_content{
   display: flex;
 }
+.footer_content li{
+  margin-right: 5%;
+}
 li{
   list-style: none;
 }
