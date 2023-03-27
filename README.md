@@ -1,4 +1,4 @@
-# ui_change
+# Scryptify
 
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=cyber-sparky_ui_change&metric=bugs)](https://sonarcloud.io/summary/new_code?id=cyber-sparky_ui_change)
 
@@ -10,4 +10,4 @@ User flow: https://drive.google.com/drive/u/0/folders/1DizsnHhhrTusd1bBd3fEEjTQC
 
 Wireframe: https://drive.google.com/drive/u/0/folders/1E5mE_loktiOEmYTq0JKzu0OPUaxEmjyx
 
-Live Server: https://cyber-sparky.github.io/ui_change/
+Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
