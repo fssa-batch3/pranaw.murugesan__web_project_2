@@ -6,6 +6,7 @@
 
 #### Create an Account
 * Scenario 1: Successfully create an account
+** Scenario 1: Successfully create an account
 
 Problem statement: https://drive.google.com/drive/u/0/folders/1jNeryUWIod0cnO7hez2p6bWCqBkHvEpe
 
