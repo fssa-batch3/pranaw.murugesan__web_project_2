@@ -47,6 +47,15 @@ Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
         3. Select a course to view its details.
     - Expected Result:
         - The user can view the index page of the selected course.
+### Learn course
+- Scenario 1: Successfully view course details
+    - Steps:
+        1. Log in as a learner.
+        2. Navigate to the course listing page.
+        3. Select a course to view its details.
+        4. Click "Enroll path" button
+    - Expected Result:
+        - The user redirected to learning page and start learning
 ### Add/view Course Progress in Profile page (Yet to start)
 - Scenario 1: Successfully add course progress
     - Steps:
