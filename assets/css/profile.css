@@ -151,3 +151,10 @@ main {
   color: red;
   text-decoration: overline;
 }
+.resume_btn{
+  padding: 2%;
+  padding-bottom: 5%;
+  height: 0;
+  margin-top: 5%;
+  background-color: whitesmoke;
+}
