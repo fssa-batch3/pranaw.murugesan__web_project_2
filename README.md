@@ -1,7 +1,8 @@
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=cyber-sparky_ui_change&metric=bugs)](https://sonarcloud.io/summary/new_code?id=cyber-sparky_ui_change)
-***
+# Scryptify
+
 ## Scryptify is a Learning Platfom which you can learn Hacking and Prevent hacking from Hackers. We Provide wide range of hacking knowledge to you. You can enroll a course to start learning in a particular hacking path and unlock your passion and stop hackers hacking you. We Provide Certification if you complete a certain a Course and you'll get appreciation from us.
 
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=cyber-sparky_ui_change&metric=bugs)](https://sonarcloud.io/summary/new_code?id=cyber-sparky_ui_change)
 
 Problem statement: https://drive.google.com/drive/u/0/folders/1jNeryUWIod0cnO7hez2p6bWCqBkHvEpe
 
@@ -13,7 +14,6 @@ Wireframe: https://drive.google.com/drive/u/0/folders/1E5mE_loktiOEmYTq0JKzu0OPU
 
 Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
 
-# Scryptify
 ## Learner
 ### Create an account
 - Scenario 1: Successfully create an account
