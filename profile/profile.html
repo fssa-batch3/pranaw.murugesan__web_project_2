@@ -167,21 +167,45 @@
         })
 
         //Delete profile Btn
+        // document.getElementById("deleteProfile").addEventListener("click", function () {
+
+        //     let confirmMessage = confirm("are you want to delete your profile")
+
+        //     if (confirmMessage == true) {
+        //         for (let k = 0; k < arr.length; k++) {
+        //             if (editEmail.value == arr[k]["email"]) {
+        //                 arr.splice(k, 1)
+        //                 localStorage.removeItem("profile");
+        //                 localStorage.setItem("userData", JSON.stringify(arr))
+        //                 
+        //             }
+        //         }
+        //     }
+        // })
         document.getElementById("deleteProfile").addEventListener("click", function () {
-
-            let confirmMessage = confirm("are you want to delete your profile")
-
-            if (confirmMessage == true) {
-                for (let k = 0; k < arr.length; k++) {
-                    if (editEmail.value == arr[k]["email"]) {
-                        arr.splice(k, 1)
-                        localStorage.removeItem("profile");
-                        localStorage.setItem("userData", JSON.stringify(arr))
-                        window.location.href = "../login/signin.html"
+            swal({
+                title: "Are you sure?",
+                text: "Once deleted, you will not be able to recover this account!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        for (let k = 0; k < arr.length; k++) {
+                            if (editEmail.value == arr[k]["email"]) {
+                                arr.splice(k, 1)
+                                localStorage.removeItem("profile");
+                                localStorage.setItem("userData", JSON.stringify(arr))
+                                window.location.href = "../login/signin.html"
+                            }
+                        }
+                    } else {
+                        swal("Your Account is safe!");
                     }
-                }
-            }
+                });
         })
+
     </script>
 </body>
 
