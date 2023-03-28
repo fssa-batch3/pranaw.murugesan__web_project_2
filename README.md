@@ -39,20 +39,11 @@ Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
         3. View the list of available course.
     - Expected Result:
         - The user can view the list of available course.
-### View introduction introduction
+### View course introduction
 - Scenario 1: Successfully view course details
     - Steps:
         1. Log in as a learner.
         2. Navigate to the course listing page.
         3. Select a course to view its details.
     - Expected Result:
-        - The user can view the details of the selected course.
-### Buy a product/item
-- Scenario 1: Successfully purchase a product/item
-    - Steps:
-        1. Log in as a learner.
-        2. Navigate to the course listing page.
-        3. Select a course to view its details.
-        4. Click the "Enroll path" button.
-    - Expected Result:
-        - The user is redirected to the learning page.
+        - The user can view the index page of the selected course.
