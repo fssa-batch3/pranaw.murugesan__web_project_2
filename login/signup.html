@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 
@@ -27,13 +27,13 @@
     </div>
     <nav>
       <a href="../index.html"><button>Home</button></a>
-      <a href="../course/course.html"><button>Courses</button></a>
       <a href="#"><button>About</button></a>
-      <a href="./signin.html"><button>Profile</button></a>
     </nav>
     <img id="wave" src="../assets/img/wave-haikei.png" alt="">
   </header>
   <!-- header end -->
+
+  <!-- Form starts here -->
   <form id="form">
     <div class="mb-3">
       <label for="fname" class="form-label">Enter Your First Name</label>
@@ -57,15 +57,12 @@
 
 
   <script>
-
-
     document.getElementById("form").addEventListener("submit", (e) => {
       e.preventDefault();
       signup();
-      
-
     })
     const signup = () => {
+      // Initialising variables
       const fname = document.getElementById("fname").value;
       const lname = document.getElementById("lname").value;
       const email = document.getElementById("email").value;
@@ -81,8 +78,6 @@
 
         }
       let users = JSON.parse(localStorage.getItem("userData"));
-
-
       let res;
 
       if (users) {
@@ -98,7 +93,8 @@
         })
 
         if (res == 1) {
-          alert("Email already registered")
+          // alert("Email already registered")
+          swal("Sorry :(", "Account already exist!", "error");
         }
         else{
           arr.push(userList)

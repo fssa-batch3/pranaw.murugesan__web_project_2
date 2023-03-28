@@ -1,0 +1,28 @@
+{
+  "name": "pranaw.murugesan__web_project_2",
+  "version": "1.0.0",
+  "description": "[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=cyber-sparky_ui_change&metric=bugs)](https://sonarcloud.io/summary/new_code?id=cyber-sparky_ui_change)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "http-server ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fssa-batch3/pranaw.murugesan__web_project_2.git"
+  },
+  "keywords": [],
+  "author": "cyber-sparky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fssa-batch3/pranaw.murugesan__web_project_2/issues"
+  },
+  "homepage": "https://github.com/fssa-batch3/pranaw.murugesan__web_project_2#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "husky": "^8.0.3"
+  }
+}

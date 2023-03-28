@@ -2,233 +2,241 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="../assets/css/funAttack.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="../assets/css/funAttack.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
-    <!-- header starting -->
-    <header>
+  <!-- header starting -->
+  <header>
 
-        <div>
-            <h2>Scriptify</h2>
-        </div>
-        <nav>
-            <a href="../course/course.html"><button>Home</button></a>
-            <a href="#"><button>About</button></a>
-            <a href="../profile/profile.html"><button>Profile</button></a>
-        </nav>
-    </header>
-    <aside>
-        <a href="./mobileHacking.html">Introduction</a>
-        <a href="./termuxWalkthrough.html">Termux walkthrough</a>
-        <a href="#">Linux Commands</a>
-        <a href="">Spamming</a>
-        <a href="">Phishing</a>
-        <a href="">Metasploit</a>
-        <a href="./funAttacks.html">Fun attacks with friends</a>
-    </aside>
-    <main>
-        <h1>Linux Commands</h1>
-        <table>
-            <tr>
-              <th>List of Termux Commands</th>
-              <th>Uses of Termux Commands</th>
-            </tr>
-            <tr>
-              <td>pkg search PACKAGE NAME HERE</td>  
-              <td>Allows you to search a particular package.</td>            
-            </tr>
-            <tr>
-              <td>pkg install PACKAGE NAME HERE</td>
-              <td>Install a package.</td>
-            </tr>
-            <tr>
-                <td>pkg uninstall PACKAGE NAME HERE</td>
-                <td>uninstall a package.</td>
-              </tr>
-              <tr>
-                <td>pkg reinstall PACKAGE NAME HERE</td>
-                <td>Reinstall a package.</td>
-              </tr>
-              <tr>
-                <td>pkg show PACKAGE NAME HERE</td>
-                <td>Get detailed inormation about the package.</td>
-              </tr>
-              <tr>
-                <td>pkg-list-installed</td>
-                <td>List installed Termux package.</td>
-              </tr>
-              <tr>
-                <td>pkg-list-all</td>
-                <td>List all available package for Termux.</td>
-              </tr>
-              <tr>
-                <td>pkg autoclean</td>
-                <td>Removes packages which are not longer needed.</td>
-              </tr>
-              <tr>
-                <td>pkg clean</td>
-                <td>cleanup the local cache of packages downloaded from remote repositories.</td>
-              </tr>
-              <tr>
-                <td>pkg files PACKAGE NAME HERE</td>
-                <td>Shows the location of the files.</td>
-              </tr>
-              <tr>
-                <td>pkg update</td>
-                <td>Update the Termux packages.</td>
-              </tr>
-              <tr>
-                <td>pkg upgrade</td>
-                <td>Upgrade the Termux packages.</td>
-              </tr>
-              <tr>
-                <td>pkg update && pkg upgrade -y</td>
-                <td>Update and Upgrade the Termux packages.</td>
-              </tr>
-          </table>
-          <h1>List of Termux basic shell commands</h1>
-          <table>
-            <tr>
-              <th>List of Termux Commands</th>
-              <th>Uses of Termux Commands</th>
-            </tr>
-            <tr>
-              <td>history</td>
-              <td>Shows the history of previously typed commands.</td>
-            </tr>
-            <tr>
-              <td>cal</td>
-              <td>Shows Calander.</td>
-            </tr>
-            <tr>
-              <td>date</td>
-              <td>Shows current date.</td>
-            </tr>
-            <tr>
-              <td>help</td>
-              <td>Displays information about shell built-in commands.</td>
-            </tr>
-            <tr>
-              <td>exit</td>
-              <td>Use this command to close the Termux.</td>
-            </tr>
-            <tr>
-              <td>uptime</td>
-              <td>Shows the uptime of your operating system.</td>
-            </tr>
-            <tr>
-              <td>df</td>
-              <td>Displays the amount of disk space available on the file system.</td>
-            </tr>
-            <tr>
-              <td>find</td>
-              <td>Search for files in a directory hierarchy.</td>
-            </tr>
-            <tr>
-              <td>su</td>
-              <td>Change user ID or become superuser.</td>
-            </tr>
-            <tr>
-              <td>echo</td>
-              <td>Write arguments to the standard output.</td>
-            </tr>
-            <tr>
-              <td>passwd</td>
-              <td>Change user's password. If no user is specified, changes the password for the current user.</td>
-            </tr>
-            <tr>
-              <td>du</td>
-              <td>Summarize disk space used for each FILE and/or directory.</td>
-            </tr>
-            <tr>
-              <td>whoami</td>
-              <td>Displays user, group and privileges information for the user who is currently logged on to the local system.</td>
-            </tr>
-            <tr>
-              <td>ifconfig</td>
-              <td>Configure network interface parameters.</td>
-            </tr>
-            <tr>
-              <td>ping</td>
-              <td>Send ICMP ECHO_REQUEST to network hosts.</td>
-            </tr>
-            <tr>
-              <td>netstat</td>
-              <td>Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.</td>
-            </tr>
-            <tr>
-              <td>sleep</td>
-              <td>Suspends program execution for a specified time.</td>
-            </tr>
-          </table>
-          <h1>List of Termux commands for File Management</h1>
-          <table>
-            <tr>
-              <th>List of Termux Commands</th>
-              <th>Uses of Termux Commands</th>
-            </tr>
-            <tr>
-              <td>ls</td>
-              <td>List information about files and directories within the file system.</td>
-            </tr>
-            <tr>
-              <td>touch FILENAME</td>
-              <td>Create a new file.</td>
-            </tr>
-            <tr>
-              <td>cat FILENAME</td>
-              <td>cat command is used to display the contents of a file.</td>
-            </tr>
-            <tr>
-              <td>cp</td>
-              <td>cp command is used to create the copy of a file.</td>
-            </tr>
-            <tr>
-              <td>mv</td>
-              <td>mv command is used to move a file from source to destination.</td>
-            </tr>
-            <tr>
-              <td>rm FILENAME</td>
-              <td>delete a file</td>
-            </tr>
-            <tr>
-              <td>rm -rf DIRECTORY NAME</td>
-              <td>Force delete the given directory.</td>
-            </tr>
-            <tr>
-              <td>mkdir NEW DIRECTORY NAME</td>
-              <td>Create a new directory.</td>
-            </tr>
-            <tr>
-              <td>rmdir DIRECTORY NAME</td>
-              <td>Remove a directory.</td>
-            </tr>
-            <tr>
-              <td>cd DIRECTORY NAME</td>
-              <td>Change the directory.</td>
-            </tr>
-            <tr>
-              <td>pwd</td>
-              <td>Prints the current working directory.</td>
-            </tr>
-            <tr>
-              <td>chmod 777 FILENAME</td>
-              <td>Modify the permission of the file. Anyone can read, write, and execute the file.</td>
-            </tr>
-          </table>
-    </main>
+    <div>
+      <h2>Scriptify</h2>
+    </div>
+    <nav>
+      <a href="../course/course.html"><button>Home</button></a>
+      <a href="#"><button>About</button></a>
+      <a href="../profile/profile.html"><button>Profile</button></a>
+    </nav>
+  </header>
+  <!-- Navigation Aside -->
+  <aside>
+    <a href="./mobileHacking.html">Introduction</a>
+    <a href="./termuxWalkthrough.html">Termux walkthrough</a>
+    <a href="#">Linux Commands</a>
+    <a href="">Spamming</a>
+    <a href="">Phishing</a>
+    <a href="">Metasploit</a>
+    <a href="./funAttacks.html">Fun attacks with friends</a>
+  </aside>
+  <main>
+    <!-- Linux commands table start here -->
+    <h1>Linux Commands</h1>
+    <table>
+      <tr>
+        <th>List of Termux Commands</th>
+        <th>Uses of Termux Commands</th>
+      </tr>
+      <tr>
+        <td>pkg search PACKAGE NAME HERE</td>
+        <td>Allows you to search a particular package.</td>
+      </tr>
+      <tr>
+        <td>pkg install PACKAGE NAME HERE</td>
+        <td>Install a package.</td>
+      </tr>
+      <tr>
+        <td>pkg uninstall PACKAGE NAME HERE</td>
+        <td>uninstall a package.</td>
+      </tr>
+      <tr>
+        <td>pkg reinstall PACKAGE NAME HERE</td>
+        <td>Reinstall a package.</td>
+      </tr>
+      <tr>
+        <td>pkg show PACKAGE NAME HERE</td>
+        <td>Get detailed inormation about the package.</td>
+      </tr>
+      <tr>
+        <td>pkg-list-installed</td>
+        <td>List installed Termux package.</td>
+      </tr>
+      <tr>
+        <td>pkg-list-all</td>
+        <td>List all available package for Termux.</td>
+      </tr>
+      <tr>
+        <td>pkg autoclean</td>
+        <td>Removes packages which are not longer needed.</td>
+      </tr>
+      <tr>
+        <td>pkg clean</td>
+        <td>cleanup the local cache of packages downloaded from remote repositories.</td>
+      </tr>
+      <tr>
+        <td>pkg files PACKAGE NAME HERE</td>
+        <td>Shows the location of the files.</td>
+      </tr>
+      <tr>
+        <td>pkg update</td>
+        <td>Update the Termux packages.</td>
+      </tr>
+      <tr>
+        <td>pkg upgrade</td>
+        <td>Upgrade the Termux packages.</td>
+      </tr>
+      <tr>
+        <td>pkg update && pkg upgrade -y</td>
+        <td>Update and Upgrade the Termux packages.</td>
+      </tr>
+    </table>
+    <!-- Linux commands table ends here -->
+    <h1>List of Termux basic shell commands</h1>
+    <!-- Termux basic shell commands table starts here -->
+    <table>
+      <tr>
+        <th>List of Termux Commands</th>
+        <th>Uses of Termux Commands</th>
+      </tr>
+      <tr>
+        <td>history</td>
+        <td>Shows the history of previously typed commands.</td>
+      </tr>
+      <tr>
+        <td>cal</td>
+        <td>Shows Calander.</td>
+      </tr>
+      <tr>
+        <td>date</td>
+        <td>Shows current date.</td>
+      </tr>
+      <tr>
+        <td>help</td>
+        <td>Displays information about shell built-in commands.</td>
+      </tr>
+      <tr>
+        <td>exit</td>
+        <td>Use this command to close the Termux.</td>
+      </tr>
+      <tr>
+        <td>uptime</td>
+        <td>Shows the uptime of your operating system.</td>
+      </tr>
+      <tr>
+        <td>df</td>
+        <td>Displays the amount of disk space available on the file system.</td>
+      </tr>
+      <tr>
+        <td>find</td>
+        <td>Search for files in a directory hierarchy.</td>
+      </tr>
+      <tr>
+        <td>su</td>
+        <td>Change user ID or become superuser.</td>
+      </tr>
+      <tr>
+        <td>echo</td>
+        <td>Write arguments to the standard output.</td>
+      </tr>
+      <tr>
+        <td>passwd</td>
+        <td>Change user's password. If no user is specified, changes the password for the current user.</td>
+      </tr>
+      <tr>
+        <td>du</td>
+        <td>Summarize disk space used for each FILE and/or directory.</td>
+      </tr>
+      <tr>
+        <td>whoami</td>
+        <td>Displays user, group and privileges information for the user who is currently logged on to the local system.
+        </td>
+      </tr>
+      <tr>
+        <td>ifconfig</td>
+        <td>Configure network interface parameters.</td>
+      </tr>
+      <tr>
+        <td>ping</td>
+        <td>Send ICMP ECHO_REQUEST to network hosts.</td>
+      </tr>
+      <tr>
+        <td>netstat</td>
+        <td>Print network connections, routing tables, interface statistics, masquerade connections, and multicast
+          memberships.</td>
+      </tr>
+      <tr>
+        <td>sleep</td>
+        <td>Suspends program execution for a specified time.</td>
+      </tr>
+    </table>
+    <h1>List of Termux commands for File Management</h1>
+    <table>
+      <tr>
+        <th>List of Termux Commands</th>
+        <th>Uses of Termux Commands</th>
+      </tr>
+      <tr>
+        <td>ls</td>
+        <td>List information about files and directories within the file system.</td>
+      </tr>
+      <tr>
+        <td>touch FILENAME</td>
+        <td>Create a new file.</td>
+      </tr>
+      <tr>
+        <td>cat FILENAME</td>
+        <td>cat command is used to display the contents of a file.</td>
+      </tr>
+      <tr>
+        <td>cp</td>
+        <td>cp command is used to create the copy of a file.</td>
+      </tr>
+      <tr>
+        <td>mv</td>
+        <td>mv command is used to move a file from source to destination.</td>
+      </tr>
+      <tr>
+        <td>rm FILENAME</td>
+        <td>delete a file</td>
+      </tr>
+      <tr>
+        <td>rm -rf DIRECTORY NAME</td>
+        <td>Force delete the given directory.</td>
+      </tr>
+      <tr>
+        <td>mkdir NEW DIRECTORY NAME</td>
+        <td>Create a new directory.</td>
+      </tr>
+      <tr>
+        <td>rmdir DIRECTORY NAME</td>
+        <td>Remove a directory.</td>
+      </tr>
+      <tr>
+        <td>cd DIRECTORY NAME</td>
+        <td>Change the directory.</td>
+      </tr>
+      <tr>
+        <td>pwd</td>
+        <td>Prints the current working directory.</td>
+      </tr>
+      <tr>
+        <td>chmod 777 FILENAME</td>
+        <td>Modify the permission of the file. Anyone can read, write, and execute the file.</td>
+      </tr>
+    </table>
+    <!-- Termux basic shell commands table ends here -->
+  </main>
 </body>
+
 </html>
