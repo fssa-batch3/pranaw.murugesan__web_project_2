@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../assets/css/profile.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -114,18 +115,18 @@
         let welcomeText = document.getElementById("welcome")
 
         // showing datas in Profile Page
-        arr.find(element=>{
-            if(element["email"] == profile["email"]){
+        arr.find(element => {
+            if (element["email"] == profile["email"]) {
                 return res = element
-                
+
             }
         })
-            name.innerText = res["firstname"] + " " + res["lastname"];
-            editFname.value = res["firstname"];
-            editLname.value = res["lastname"];
-            email.innerText = res["email"];
-            editEmail.value = res["email"];
-            welcomeText.innerText = `Hiii  ${res["firstname"]} !!` + " 🖖"
+        name.innerText = res["firstname"] + " " + res["lastname"];
+        editFname.value = res["firstname"];
+        editLname.value = res["lastname"];
+        email.innerText = res["email"];
+        editEmail.value = res["email"];
+        welcomeText.innerText = `Hiii  ${res["firstname"]} !!` + " 🖖"
 
         welcomeText.style.textTransform = "Uppercase"; //UpperCasing Welcome Text
 
@@ -150,7 +151,7 @@
         document.getElementById("Save").addEventListener("click", (e) => {
             // e.preventDefault();
             arr.find(f => {
-                if ( f["email"]==editEmail.value) {
+                if (f["email"] == editEmail.value) {
                     f["firstname"] = editFname.value;
                     f["lastname"] = editLname.value;
 
@@ -169,6 +170,7 @@
         document.getElementById("deleteProfile").addEventListener("click", function () {
 
             let confirmMessage = confirm("are you want to delete your profile")
+
             if (confirmMessage == true) {
                 for (let k = 0; k < arr.length; k++) {
                     if (editEmail.value == arr[k]["email"]) {
@@ -180,9 +182,6 @@
                 }
             }
         })
-
-
-           
     </script>
 </body>
 

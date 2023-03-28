@@ -45,6 +45,9 @@ button {
 a {
   margin-right: 1em;
   margin-top: 2em;
+  text-align: center;
+  text-decoration: none;
+  color: black;
 }
 #wave {
   width: 100%;
@@ -66,11 +69,6 @@ aside{
     border-radius: 2%;
     margin-top: 0;
     
-}
-a{
-  text-align: center;
-  text-decoration: none;
-  color: black;
 }
 main a {
   color: blue;
