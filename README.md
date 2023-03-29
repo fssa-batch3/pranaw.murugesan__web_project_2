@@ -15,7 +15,7 @@ Wireframe: https://drive.google.com/drive/u/0/folders/1E5mE_loktiOEmYTq0JKzu0OPU
 Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
 
 ## Learner
-### Create an account
+### Create an account ( Completed ✔)
 - Scenario 1: Successfully create an account
     - Steps:
         1. Navigate to the registration page by clicking "Start Learning" button.
@@ -24,7 +24,7 @@ Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
         4. Click the "Signup" button.
     - Expected Result:
         - The user is redirected to the login page.
-### Login to account
+### Login to account ( Completed ✔)
 - Scenario 1: Successfully login in to account
     - Steps:
         1. Navigate to the registration page by clicking "Start Learning" button.
@@ -32,7 +32,7 @@ Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
         3. Click the "login" button.
     - Expected Result:
         - The user is redirected to the course listing page.
-### View course
+### View course ( Completed ✔)
 - Scenario 1: Successfully view course
     - Steps:
         1. Log in as a learner.
@@ -40,7 +40,7 @@ Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
         3. View the list of available course.
     - Expected Result:
         - The user can view the list of available course.
-### View course introduction
+### View course introduction ( Completed ✔)
 - Scenario 1: Successfully view course details
     - Steps:
         1. Log in as a learner.
@@ -48,7 +48,7 @@ Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
         3. Select a course to view its details.
     - Expected Result:
         - The user can view the index page of the selected course.
-### Learn course
+### Learn course ( Completed ✔)
 - Scenario 1: Successfully view course details
     - Steps:
         1. Log in as a learner.
@@ -57,14 +57,14 @@ Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
         4. Click "Enroll path" button
     - Expected Result:
         - The user redirected to learning page and start learning
-### View Profile
+### View Profile ( Completed ✔)
 - Scenario 1: Successfully view profile 
     - Steps:
         1. Log in as a learner.
         2. Navigate to the profile page by clicking "profile" button
     - Expected Result:
         - The user can view profile
-### Edit Profile
+### Edit Profile ( Completed ✔)
 - Scenario 1: Successfully Edit profile 
     - Steps:
         1. Log in as a learner.
@@ -72,7 +72,7 @@ Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
         3. Click "Edit" button to edit
     - Expected Result:
         - The user can edit profile
-### Delete Profile
+### Delete Profile ( Completed ✔)
 - Scenario 1: Successfully Edit profile 
     - Steps:
         1. Log in as a learner.
