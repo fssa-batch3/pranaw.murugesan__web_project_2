@@ -15,7 +15,7 @@ Wireframe: https://drive.google.com/drive/u/0/folders/1E5mE_loktiOEmYTq0JKzu0OPU
 Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
 
 ## Learner
-### Create an account ( Completed ✔)
+### Create an account ( completed :white_check_mark: )
 - Scenario 1: Successfully create an account
     - Steps:
         1. Navigate to the registration page by clicking "Start Learning" button.
