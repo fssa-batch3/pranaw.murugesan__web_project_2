@@ -56,6 +56,29 @@ Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
         4. Click "Enroll path" button
     - Expected Result:
         - The user redirected to learning page and start learning
+### View Profile
+- Scenario 1: Successfully view profile 
+    - Steps:
+        1. Log in as a learner.
+        2. Navigate to the profile page by clicking "profile" button
+    - Expected Result:
+        - The user can view profile
+### Edit Profile
+- Scenario 1: Successfully Edit profile 
+    - Steps:
+        1. Log in as a learner.
+        2. Navigate to the profile page by clicking "profile" button
+        3. Click "Edit" button to edit
+    - Expected Result:
+        - The user can edit profile
+### Delete Profile
+- Scenario 1: Successfully Edit profile 
+    - Steps:
+        1. Log in as a learner.
+        2. Navigate to the profile page by clicking "profile" button
+        3. Click "Delete" button to delete
+    - Expected Result:
+        - The user can delete profile
 ### Add/view Course Progress in Profile page (Yet to start)
 - Scenario 1: Successfully add course progress
     - Steps:
