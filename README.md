@@ -21,13 +21,13 @@ Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
         1. Navigate to the registration page by clicking "Start Learning" button.
         2. Click "don't have account" button to navigate signup page
         3. Enter the required information such as first_name, last_name, email and password.
-        4. Click the "Create Account" button.
+        4. Click the "Signup" button.
     - Expected Result:
         - The user is redirected to the login page.
 ### Login to account
 - Scenario 1: Successfully login in to account
     - Steps:
-        1. Navigate to the login page.
+        1. Navigate to the registration page by clicking "Start Learning" button.
         2. Enter the required information such as email, and password.
         3. Click the "login" button.
     - Expected Result:
