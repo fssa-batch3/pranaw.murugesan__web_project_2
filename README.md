@@ -80,4 +80,4 @@ Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
         3. Click "Delete" button to delete
     - Expected Result:
         - The user can delete profile
-### Add/view Course Progress in Profile page (Yet to start)
+### Add/view Course Progress in Profile page (Yet to start ❌)
