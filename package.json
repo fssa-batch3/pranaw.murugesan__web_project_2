@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/fssa-batch3/pranaw.murugesan__web_project_2#readme",
   "dependencies": {
-    "http-server": "^14.1.1"
+    "express": "^4.18.2",
+    "http-server": "^14.1.1",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.5.0",
