@@ -16,7 +16,7 @@ User flow: https://drive.google.com/drive/u/0/folders/1DizsnHhhrTusd1bBd3fEEjTQC
 
 Wireframe: https://drive.google.com/drive/u/0/folders/1E5mE_loktiOEmYTq0JKzu0OPUaxEmjyx
 
-Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
+Live Server: scryptify.netlify.app
 
 ## Learner
 ### Create an account ( completed :white_check_mark: )
