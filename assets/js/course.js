@@ -55,6 +55,7 @@ const cards = [
       redirection:""
     },
   ]
+
 for (let i = cards.length-1; i >= 0; i--) {
 
 
@@ -65,6 +66,8 @@ container.setAttribute("class", "container");
 if(i>2){
   container.setAttribute("class", "container upcoming");
 }
+
+
   document.querySelector("main").prepend(container);
 
   const img = document.createElement("img")
@@ -94,3 +97,9 @@ document.querySelector("#stages").addEventListener("click",function(){
   document.querySelector("#mobilehack").addEventListener("click",function(){
     window.location.href="../learning_pages/mobileHackingIntro.html"
   })
+
+  // const search = document.createElement("input")
+  // search.setAttribute("type","search")
+  // search.setAttribute("class","searchCourse")
+  // search.setAttribute("placeholder","Search Courses...")
+  // document.querySelector("header").append(search)

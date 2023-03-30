@@ -89,4 +89,15 @@ main{
 }
 .upcoming{
   opacity: 50%;
-  background-color: gray}
+  background-color: gray
+}
+.searchCourse{
+  width: 40%;
+  padding: 1%;
+  font-size: 120%;
+  margin-left:30%;
+  margin-top:2%;
+}
+.searchCourse:valid{
+  outline: none;
+}

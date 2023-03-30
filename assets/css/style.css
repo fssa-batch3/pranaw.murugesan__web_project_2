@@ -14,7 +14,7 @@ header {
   justify-content: space-between;
   display: flex;
   width: 100%;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
   height: 10vh;
 }
 header div h2{
@@ -50,8 +50,8 @@ a {
   text-align: center;
 }
 .heroSection {
-  margin-top: 5%;
-  height: 70vh;
+  margin-top: 0%;
+  height: 80vh;
 }
 .firstSection > h1 {
   font-size: 4rem;
@@ -63,9 +63,9 @@ a {
   text-align: center;
   width: 30%;
   border-radius: 2%;
-  color: red ;
+  color: black;
   height: 35vh;
-  background-color:whitesmoke ;
+  background-color:#F9F6EE ;
   box-shadow: 2px 2px 20px  gray;
 }
 .learn > img {
@@ -76,7 +76,7 @@ a {
   margin-top: 10%;
 }
 .learningDiv {
-  margin-top: 5%;
+  margin-top: 4%;
   display: flex;
   justify-content: space-around;
 }
@@ -114,6 +114,12 @@ a {
   margin-bottom: 2%;
   margin-top: 3%;
   padding: 1%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.5s;
+}
+.btn-info:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .hackersInfo{
