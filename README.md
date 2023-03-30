@@ -4,6 +4,9 @@
 
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_pranaw.murugesan__web_project_2&metric=bugs)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_pranaw.murugesan__web_project_2)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_pranaw.murugesan__web_project_2&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_pranaw.murugesan__web_project_2)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_pranaw.murugesan__web_project_2&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_pranaw.murugesan__web_project_2)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_pranaw.murugesan__web_project_2&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_pranaw.murugesan__web_project_2)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_pranaw.murugesan__web_project_2&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_pranaw.murugesan__web_project_2)
 
 Problem statement: https://drive.google.com/drive/u/0/folders/1jNeryUWIod0cnO7hez2p6bWCqBkHvEpe
 
