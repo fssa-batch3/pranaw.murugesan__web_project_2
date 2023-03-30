@@ -82,3 +82,6 @@ Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
         - The user can delete profile
 ### Add Course Progress in Profile page ( yet to start :x: )
 ### view Course Progress in Profile page ( yet to start :x: )
+### Add Profile photo in Profile page ( yet to start :x: )
+### Change Profile photo in Profile page ( yet to start :x: )
+### Delete Profile photo in Profile page ( yet to start :x: )
