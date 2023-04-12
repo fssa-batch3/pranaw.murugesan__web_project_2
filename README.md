@@ -44,6 +44,15 @@ Live Server: https://scryptify.netlify.app
         3. View the list of available course.
     - Expected Result:
         - The user can view the list of available course.
+### Search Courses in course page ( Completed :white_check_mark: )
+- Scenario 1: Successfully search course
+    - Steps:
+        1. Log in as a learner.
+        2. Navigate to the course listing page.
+        3. Select a search bar
+        4. Search for the course you want to learn
+    - Expected Result:
+        - The user can view the course who he/she inputed text in search bar
 ### View course introduction ( completed :white_check_mark: )
 - Scenario 1: Successfully view course details
     - Steps:
@@ -84,7 +93,6 @@ Live Server: https://scryptify.netlify.app
         3. Click "Delete" button to delete
     - Expected Result:
         - The user can delete profile
-### Search Courses in course page ( yet to start :x: )
 ### Add Course Progress in Profile page ( yet to start :x: )
 ### view Course Progress in Profile page ( yet to start :x: )
 ### Add Profile photo in Profile page ( yet to start :x: )
