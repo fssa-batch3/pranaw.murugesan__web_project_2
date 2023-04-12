@@ -52,7 +52,7 @@ Live Server: https://scryptify.netlify.app
         3. Select a search bar
         4. Search for the course you want to learn
     - Expected Result:
-        - The user can view the course who he/she inputed text in search bar
+        - The user can view the searched course
 ### View course introduction ( completed :white_check_mark: )
 - Scenario 1: Successfully view course details
     - Steps:
