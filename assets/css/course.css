@@ -90,13 +90,13 @@ main{
   opacity: 50%;
   background-color: gray
 }
-.searchCourse{
+#searchCourse{
   width: 40%;
   padding: 1%;
   font-size: 120%;
   margin-left:30%;
   margin-top:2%;
 }
-.searchCourse:valid{
+#searchCourse:valid{
   outline: none;
 }
