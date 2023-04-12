@@ -2,7 +2,11 @@
 
 ## Scryptify is a Learning Platfom which you can learn Hacking and Prevent hacking from Hackers. We Provide wide range of hacking knowledge to you. You can enroll a course to start learning in a particular hacking path and unlock your passion and stop hackers hacking you. We Provide Certification if you complete a certain a Course and you'll get appreciation from us.
 
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_pranaw.murugesan__web_project&metric=bugs)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_pranaw.murugesan__web_project)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_pranaw.murugesan__web_project_2&metric=bugs)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_pranaw.murugesan__web_project_2)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_pranaw.murugesan__web_project_2&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_pranaw.murugesan__web_project_2)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_pranaw.murugesan__web_project_2&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_pranaw.murugesan__web_project_2)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_pranaw.murugesan__web_project_2&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_pranaw.murugesan__web_project_2)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_pranaw.murugesan__web_project_2&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_pranaw.murugesan__web_project_2)
 
 Problem statement: https://drive.google.com/drive/u/0/folders/1jNeryUWIod0cnO7hez2p6bWCqBkHvEpe
 
@@ -12,7 +16,7 @@ User flow: https://drive.google.com/drive/u/0/folders/1DizsnHhhrTusd1bBd3fEEjTQC
 
 Wireframe: https://drive.google.com/drive/u/0/folders/1E5mE_loktiOEmYTq0JKzu0OPUaxEmjyx
 
-Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
+Live Server: https://scryptify.netlify.app
 
 ## Learner
 ### Create an account ( completed :white_check_mark: )
@@ -80,6 +84,7 @@ Live Server: https://fssa-batch3.github.io/pranaw.murugesan__web_project/
         3. Click "Delete" button to delete
     - Expected Result:
         - The user can delete profile
+### Search Courses in course page ( yet to start :x: )
 ### Add Course Progress in Profile page ( yet to start :x: )
 ### view Course Progress in Profile page ( yet to start :x: )
 ### Add Profile photo in Profile page ( yet to start :x: )
