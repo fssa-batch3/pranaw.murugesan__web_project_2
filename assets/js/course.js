@@ -97,20 +97,14 @@ document.querySelector("#mobilehack").addEventListener("click", function () {
 
 let search=document.getElementById("searchCourse");
         search.addEventListener("keyup",(e)=>{
-            // console.log(e.target.value.toLowerCase())
             let word=e.target.value.toLowerCase();
             let course=document.querySelectorAll(".container");
-            // console.log(course[1])
             course.forEach(element => {
-                // console.log(element)
                 let content=element.children[1].textContent.toLowerCase();
-                // console.log(element.children[1].textContent)
                 if(content.includes(word)){
-                    // console.log("matched");
                     element.style.display="block";
                 }
                 else{
-                    // console.log("none")
                     element.style.display="none";
                 }
             });
