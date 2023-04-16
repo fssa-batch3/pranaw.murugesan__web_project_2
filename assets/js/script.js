@@ -1,7 +1,7 @@
 // index page
 const storage = JSON.parse(localStorage.getItem("userData"));
 
-document.getElementById("profile").addEventListener("click", function () {
+document.querySelector(".profile.btn.btn-info").addEventListener("click", function () {
   //   if(storage){
   //     window.location.href="./login/signin.html"
   //   }else{

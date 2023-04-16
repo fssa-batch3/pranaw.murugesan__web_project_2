@@ -39,7 +39,7 @@
       <p>A Great Website to know about hacking and protect yourself from Hackers</p>
     </div>
     <!-- Three learning boxes -->
-    <button id="profile" type="button" class="btn btn-info">Start Learning</button>
+    <button class="profile btn btn-info">Start Learning</button>
     <div class="learningDiv">
       <div class="learn">
         <img src="./assets/img/topquality.png" alt="">
@@ -106,10 +106,10 @@
     </div>
   </div>
   <hr>
-  <button id="profile" type="button" class="btn btn-info">Start Learning</button>
+  <button id="login" class="profile btn btn-info">Start Learning</button>
   <!-- footer starts here -->
   <footer>
-    <img id="footerBg" src="./assets/img/wave-haikei (1).png" alt="">
+    <img id="footerBg" src="./assets/img/wave-haikei (1).png" alt="error_img">
     <div>
       <h1>Company</h1>
       <ul>
@@ -139,9 +139,10 @@
 
   <script>
 
-
+    document.getElementById("login").addEventListener("click",function () {
+      window.location.href="./login/signin.html"
+    })
     let arr = JSON.parse(localStorage.getItem("userData"))
-
     // document.getElementById("profile").addEventListener("click", function () {
     //   // if(arr){
     //   //     window.location.href="./login/signin.html"
