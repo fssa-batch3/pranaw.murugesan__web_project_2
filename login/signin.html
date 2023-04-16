@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../assets/js/sweetAlert.js"></script>
 
 </head>
 
@@ -37,12 +37,12 @@
   <form id="form">
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
       <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
     <div class="mb-3">
       <label for="password" class="form-label">Password</label>
-      <input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" class="form-control" id="password">
+      <input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" class="form-control" id="password" required>
     </div>
     <button class="btn btn-primary">Login</button>
   </form>
@@ -50,18 +50,24 @@
 
 
   <script>
-    document.getElementById("form").addEventListener("submit", (e) => {
+    // declaring variables
+    let form = document.getElementById("form")
+    let dontHaveAccount = document.getElementById('dontHaveAccount')
+    // performing login function
+    form.addEventListener("submit", (e) => {
       e.preventDefault();
       login()
     })
-    document.getElementById('dontHaveAccount').addEventListener("click", function () {
+    // redirecting to signup Page
+    dontHaveAccount.addEventListener("click", function () {
       window.location.href = "./signup.html"
     })
     function login() {
+      // declaring variables for login
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
-      const arr = JSON.parse(localStorage.getItem("userData"))
-
+      const arr = JSON.parse(localStorage.getItem("userData")); //variable for localStorage
+      
       let login = {
         "email": email
       }
