@@ -11,6 +11,8 @@ let editLname = document.getElementById("editlname");
 let editEmail = document.getElementById("editEmail");
 let name = document.getElementById("name");
 let welcomeText = document.getElementById("welcome");
+let gender = document.getElementById("male");
+let genderfemale = document.getElementById("female");
 
 // showing datas in Profile Page
 arr.find((element) => {
@@ -23,6 +25,12 @@ editFname.value = res["firstname"];
 editLname.value = res["lastname"];
 email.innerText = res["email"];
 editEmail.value = res["email"];
+if(res["gender"]=="male"){
+     gender.setAttribute("checked","")
+}
+if(res["gender"]=="female"){
+  genderfemale.setAttribute("checked","")
+}
 welcomeText.innerText = `Hiii  ${res["firstname"]} !!` + " 🖖";
 
 welcomeText.style.textTransform = "Uppercase"; //UpperCasing Welcome Text
@@ -51,6 +59,13 @@ document.getElementById("Save").addEventListener("click", (e) => {
       f["firstname"] = editFname.value;
       f["lastname"] = editLname.value;
 
+      if (gender.checked) {
+        res["gender"] = "male";
+      }
+
+      if (genderfemale.checked) {
+        res["gender"] = "female";
+      }
       localStorage.setItem("userData", JSON.stringify(arr));
       return (check = f);
     }
