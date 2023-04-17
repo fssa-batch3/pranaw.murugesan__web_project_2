@@ -28,8 +28,8 @@
     <form class="edit">
 
         <div>
-            <input type="text" name="fname" id="editfname" placeholder="First Name">
-            <input type="text" name="lname" id="editlname" placeholder="Last Name">
+            <input type="text" name="fname" id="editfname" placeholder="First Name" pattern="[a-zA-Z]+" required>
+            <input type="text" name="lname" id="editlname" placeholder="Last Name" pattern="[a-zA-Z]+" required>
         </div>
         <input type="email" name="lname" id="editEmail" disabled>
 
@@ -37,7 +37,7 @@
             <input type="radio" name="fname" id="">
             <label for="male">Male</label>
 
-            <input type="radio" name="fname" id="" placeholder="kjnkj">
+            <input type="radio" name="fname" id="">
             <label for="male">Female</label>
         </div>
 

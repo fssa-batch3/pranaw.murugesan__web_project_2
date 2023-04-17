@@ -12,7 +12,8 @@ dontHaveAccount.addEventListener("click", function () {
 })
 function login() {
   // declaring variables for login
-  const email = document.getElementById("email").value;
+  let email = document.getElementById("email").value;
+  email = email.trim().toLowerCase();
   const password = document.getElementById("password").value;
   const arr = JSON.parse(localStorage.getItem("userData")); //variable for localStorage
   

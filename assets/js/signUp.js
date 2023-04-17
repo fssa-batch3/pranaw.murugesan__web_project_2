@@ -6,7 +6,8 @@ document.getElementById("form").addEventListener("submit", (e) => {
     // Initialising variables
     const fname = document.getElementById("fname").value;
     const lname = document.getElementById("lname").value;
-    const email = document.getElementById("email").value;
+    let email = document.getElementById("email").value;
+    email = email.trim().toLowerCase()
     const password = document.getElementById("password").value;
     const confirm_password = document.getElementById("confirm_password").value;
 
