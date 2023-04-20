@@ -93,6 +93,7 @@ Live Server: https://scryptify.netlify.app
         3. Click "Delete" button to delete
     - Expected Result:
         - The user can delete profile
+### Practice Shell Scripting ( yet to start :x: )
 ### Add Course Progress in Profile page ( yet to start :x: )
 ### view Course Progress in Profile page ( yet to start :x: )
 ### Add Profile photo in Profile page ( yet to start :x: )
