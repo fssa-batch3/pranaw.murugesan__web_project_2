@@ -19,6 +19,12 @@ const cards = [
     redirection: "mobilehack",
   },
   {
+    imgSource: "../assets/img/scripting.png",
+    title: "Scripting",
+    desc: "a programming language that employs a high-level construct to interpret and execute one command at a time",
+    redirection: "script",
+  },
+  {
     imgSource: "../assets/img/cross-site.png",
     title: "Cross-site script inclusion",
     desc: "XSS attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites",
@@ -48,19 +54,14 @@ const cards = [
     desc: "Network security is any activity designed to protect the usability and integrity of your network and data.",
     redirection: "",
   },
-  {
-    imgSource: "../assets/img/scripting.png",
-    title: "Scripting",
-    desc: "a programming language that employs a high-level construct to interpret and execute one command at a time",
-    redirection: "",
-  },
+  
 ];
 
 for (let i = cards.length - 1; i >= 0; i--) {
   const container = document.createElement("div");
   container.setAttribute("class", "container");
 
-  if (i > 2) {
+  if (i > 3) {
     container.setAttribute("class", "container upcoming");
   }
 
@@ -92,6 +93,9 @@ document.querySelector("#webhack").addEventListener("click", function () {
 });
 document.querySelector("#mobilehack").addEventListener("click", function () {
   window.location.href = "../learning_pages/mobileHackingIntro.html";
+});
+document.querySelector("#script").addEventListener("click", function () {
+  window.location.href = "../learning_pages/scripting.html";
 });
 
 

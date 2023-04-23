@@ -26,7 +26,10 @@
 
     <!-- Edit Profile Form -->
     <form class="edit">
-
+        <div>
+            <label for="changeProfile">Change Profile <input type="file" name="changeProfile"
+                    id="changeProfile"></label>
+        </div>
         <div>
             <input type="text" name="fname" id="editfname" placeholder="First Name" pattern="[a-zA-Z]+" required>
             <input type="text" name="lname" id="editlname" placeholder="Last Name" pattern="[a-zA-Z]+" required>
@@ -56,8 +59,8 @@
     <div class="container">
         <!-- Left Side container //Aside -->
         <aside>
-            <img src="https://i.pinimg.com/originals/7e/e0/a7/7ee0a7d3d8bfb6f70c732cb50754715b.jpg" alt="">
 
+            <img id="output" src="https://i.pinimg.com/originals/7e/e0/a7/7ee0a7d3d8bfb6f70c732cb50754715b.jpg" alt="erro_profile">
             <div>
                 <h1 id="name">Name</h1>
             </div>

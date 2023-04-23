@@ -16,6 +16,9 @@ header {
   background-color: #3795bd;
   margin-right: 7%;
 }
+header div h2{
+  margin-left: 10%;
+}
 header > nav {
   display: flex;
 }
@@ -44,9 +47,9 @@ aside {
   text-transform: uppercase;
 }
 aside img {
-  width: 150%;
+  width: 130%;
   margin-top: 10%;
-  border-radius: 5%;
+  border-radius: 50%;
 }
 main {
   padding-right: 10%;
@@ -99,7 +102,7 @@ main {
   position: fixed;
   background-color: white;
   width: 50%;
-  height: 40vh;
+  height: 50vh;
   margin-left: 20%;
   display: none;
   font-size: 1.5rem;
@@ -158,3 +161,6 @@ main {
   margin-top: 5%;
   background-color: whitesmoke;
 }
+
+/* change profile */
+
