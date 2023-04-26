@@ -60,7 +60,8 @@
         <!-- Left Side container //Aside -->
         <aside>
 
-            <img id="output" src="https://i.pinimg.com/originals/7e/e0/a7/7ee0a7d3d8bfb6f70c732cb50754715b.jpg" alt="erro_profile">
+            <img id="output" src="https://i.pinimg.com/originals/7e/e0/a7/7ee0a7d3d8bfb6f70c732cb50754715b.jpg"
+                alt="erro_profile">
             <div>
                 <h1 id="name">Name</h1>
             </div>
@@ -77,15 +78,42 @@
         <main>
             <!-- course completion box -->
             <h1>Course Completion</h1>
-            <div class="courseComplete">
-
-                <img class="courseImg" src="../assets/img/thingsYouShouldKnow.jpg"  alt="">
+            <div class="courseComplete" data-id="thingsYouShouldKnow" style="display: none;">
+                <img class="courseImg" src="../assets/img/thingsYouShouldKnow.jpg" alt="">
                 <div>
                     <strong>Things you should know</strong>
                     <p>Basics things that need for a hacker</p>
                     <input type="range" name="" id="" disabled>
                 </div>
-                <button class="resume_btn">Resume</button>
+                <button id="tyk" class="resume_btn">Resume</button>
+            </div>
+            
+            <div class="courseComplete" data-id="web" style="display: none;">
+                <img class="courseImg" src="../assets/img/web.jpg" alt="">
+                <div>
+                    <strong>Web Hacking</strong>
+                    <p>Things which are all done by hackers by web</p>
+                    <input type="range" name="" id="" disabled>
+                </div>
+                <button id="web" class="resume_btn">Resume</button>
+            </div>
+            <div class="courseComplete" data-id="mobilehack" style="display: none;">
+                <img class="courseImg" src="../assets/img/mobileHacking.jpg" alt="">
+                <div>
+                    <strong>Mobile Hacking</strong>
+                    <p>You will learn all about ethical mobile hacking on Android in this course! Course is strictly for ethical hacking and educational purposes!</p>
+                    <input type="range" name="" id="" disabled>
+                </div>
+                <button id="mobile" class="resume_btn">Resume</button>
+            </div>
+            <div class="courseComplete" data-id="script" style="display: none;">
+                <img class="courseImg" src="../assets/img/scripting.jpg" alt="">
+                <div>
+                    <strong>Scripting</strong>
+                    <p>A programming language that employs a high-level construct to interpret and execute one command at a time</p>
+                    <input type="range" name="" id="" disabled>
+                </div>
+                <button id="script" class="resume_btn">Resume</button>
             </div>
             <!-- Achievement Section -->
             <div class="achievementsSection">
@@ -96,12 +124,48 @@
                     <img src="https://static.vecteezy.com/system/resources/previews/002/349/754/original/modern-elegant-certificate-template-free-vector.jpg"
                         alt="">
                 </div>
-
+               
             </div>
         </main>
     </div>
     <!-- script starts here -->
     <script src="../assets/js/profile.js"></script>
+    <script>
+        
+    </script>
+    <script>
+        
+        let courses = document.querySelectorAll(".courseComplete");
+        let course_list = JSON.parse(localStorage.getItem("course_list"));
+        let user = JSON.parse(localStorage.getItem("profile"));
+        let course_div;
+        courses.forEach((e) => {
+            course_list.find((el) => {
+                if (el["enrolled_course"] == e.dataset.id && el["user_name"]==user.email) {
+
+                    e.style.display = "flex";
+                    return course_div=el;
+                }
+               
+            })
+
+        })
+
+document.getElementById("tyk").addEventListener("click",function(){
+    window.location.href="../learning_pages/stagesOfHacking.html"
+})
+document.getElementById("web").addEventListener("click",function(){
+    window.location.href="../learning_pages/webhacking.html"
+})
+document.getElementById("mobile").addEventListener("click",function(){
+    window.location.href="../learning_pages/mobileHacking.html"
+})
+document.getElementById("script").addEventListener("click",function(){
+    window.location.href="../learning_pages/scripting.html"
+})
+
+    
+    </script>
 </body>
 
 </html>

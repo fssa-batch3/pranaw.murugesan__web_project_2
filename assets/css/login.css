@@ -61,6 +61,6 @@ input:invalid{
   border: 1px solid red;
 }
 
-.dontHaveAccount{
+.dontHaveAccount, .haveAccount{
   margin-left: 29%;
 }
