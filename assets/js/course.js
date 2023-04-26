@@ -169,17 +169,21 @@ let learnBtn = document.querySelectorAll(".learnBtn")
 // console.log(learnBtn[1]);
 
 learnBtn[0].addEventListener("click",function(e){
-  console.log(e.target.dataset.id);
-  course_list.find(el=>{
-    if(el["enrolled_course"]==e.target.dataset.id){
-      window.location.href="../learning_pages/stagesOfHacking.html"
-    }else{
-      window.location.href="../learning_pages/thingsShouldKnowIntro.html"
-    }
-  })
+  if(localStorage.getItem("course_list")){
+    console.log(e.target.dataset.id);
+    course_list.find(el=>{
+      if(el["enrolled_course"]==e.target.dataset.id){
+        window.location.href="../learning_pages/stagesOfHacking.html"
+      }else{
+        window.location.href="../learning_pages/thingsShouldKnowIntro.html"
+      }
+    })
+  }
+  
 })
 learnBtn[1].addEventListener("click",function(e){
-  console.log(e.target.dataset.id);
+  if(localStorage.getItem("course_list")){
+    console.log(e.target.dataset.id);
   course_list.find(el=>{
     if(el["enrolled_course"]==e.target.dataset.id){
       window.location.href="../learning_pages/webhacking.html"
@@ -187,9 +191,13 @@ learnBtn[1].addEventListener("click",function(e){
       window.location.href="../learning_pages/webhackingintro.html"
     }
   })
+  }else{
+    window.location.href="../learning_pages/webhackingintro.html"
+  }
 })
 learnBtn[2].addEventListener("click",function(e){
-  console.log(e.target.dataset.id);
+  if(localStorage.getItem("course_list")){
+    console.log(e.target.dataset.id);
   course_list.find(el=>{
     if(el["enrolled_course"]==e.target.dataset.id){
       window.location.href="../learning_pages/mobileHacking.html"
@@ -197,14 +205,22 @@ learnBtn[2].addEventListener("click",function(e){
       window.location.href="../learning_pages/mobileHackingIntro.html"
     }
   })
+  }else{
+    window.location.href="../learning_pages/mobileHackingIntro.html"
+  }
 })
 learnBtn[3].addEventListener("click",function(e){
-  console.log(e.target.dataset.id);
-  course_list.find(el=>{
-    if(el["enrolled_course"]==e.target.dataset.id){
-      window.location.href="../learning_pages/scripting.html"
-    }else{
-      window.location.href="../learning_pages/scriptingIntro.html"
-    }
-  })
+  if(localStorage.getItem("course_list")){
+    console.log(e.target.dataset.id);
+    course_list.find(el=>{
+      if(el["enrolled_course"]==e.target.dataset.id){
+        window.location.href="../learning_pages/scripting.html"
+      }else{
+        window.location.href="../learning_pages/scriptingIntro.html"
+      }
+    })
+  }else{
+    window.location.href="../learning_pages/scriptingIntro.html"
+  }
+  
 })
