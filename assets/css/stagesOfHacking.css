@@ -65,3 +65,6 @@ a {
     z-index: -1;
     position: absolute;
 }
+p,li{
+  font-size: 19px;
+}

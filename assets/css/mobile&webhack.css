@@ -99,3 +99,7 @@ main a {
 .emailspoof{
   margin-top: 5%;
 }
+
+p,li{
+  font-size: 19px;
+}

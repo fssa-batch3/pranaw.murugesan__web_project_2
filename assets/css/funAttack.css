@@ -115,3 +115,7 @@ p{
 h3{
   margin-top: 2%;
 }
+
+p,li{
+  font-size: 19px;
+}
