@@ -101,7 +101,7 @@ p{
 }
 .editor {
   position: relative;
-  width: 500px;
+  width: 600px;
   height: 200px;
   background-color: lightgray;
 }
@@ -118,4 +118,7 @@ h3{
 
 p,li{
   font-size: 19px;
+}
+#version{
+  height: 50px;
 }

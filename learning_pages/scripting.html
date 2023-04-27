@@ -39,30 +39,34 @@
 
     <!-- Termux walkthrough part starts here -->
     <main>
-                <h1 id="intro">Introduction to Scripting</h1>
-                <p>In this Section, You will learn what is scripting and how it is works and how to write a script and execute
-                    it.</p>
-                <h3>What is Scripting</h2>
-                    <p>First of all, what is scripting !?. In computer programming, a script is a program or sequence of
-                        instructions that is interpreted or carried out by another program rather than by the computer processor
-                        (as a compiled program is).</p>
-                    <p>A script is sometimes used to mean a list of operating system commands
-                        that are prestored in a file and performed sequentially by the operating system's command interpreter
-                        whenever the list name is entered as a single command. <b>We are using python for scripting.</b></p>
-        
-                    <h3>Python Scripting</h3>
-                    <p>You need to learn python to do scripting. If you already know python, Perfect!!. Otherwise learn the
-                        basic of python like (variables, loops, basic syntax, if conditions). I guess it's a basic thing, you
-                        already know this. Lets learn file handling before getting into scripting.</p>
-                    <h3 id="fileHandle">File Handling in Python</h3>
-                    <p>The file handling plays an important role when the data needs to be stored permanently into the file. A
-                        file is a named location on disk to store related information. We can access the stored information
-                        (non-volatile) after the program termination.</p>
-                    <p>The file-handling implementation is slightly lengthy or complicated in the other programming language,
-                        but it is easier and shorter in Python. </p>
-                    <p>In Python, files are treated in two modes as text or binary. The file may be in the text or binary
-                        format, and each line of a file is ended with the special character.</p>
-                    
+        <h1 id="intro">Introduction to Scripting</h1>
+        <p>In this Section, You will learn what is scripting and how it is works and how to write a script and execute
+            it.</p>
+        <h3>What is Scripting</h2>
+            <p>First of all, what is scripting !?. In computer programming, a script is a program or sequence of
+                instructions that is interpreted or carried out by another program rather than by the computer processor
+                (as a compiled program is).</p>
+            <p>A script is sometimes used to mean a list of operating system commands
+                that are prestored in a file and performed sequentially by the operating system's command interpreter
+                whenever the list name is entered as a single command. <b>We are using python for scripting.</b></p>
+
+            <h3>Python Scripting</h3>
+            <p>You need to learn python to do scripting. If you already know python, Perfect!!. Otherwise learn the
+                basic of python like (variables, loops, basic syntax, if conditions). I guess it's a basic thing, you
+                already know this. Lets learn file handling before getting into scripting.</p>
+            <h3 id="fileHandle">File Handling in Python</h3>
+            <p>Make sure to install python in your computer, to check follow this command in your terminal</p>
+            <div id="version" class="editor">
+                <code>C:\Users\Scryptify> python --version</code>
+            </div>
+            <p>The file handling plays an important role when the data needs to be stored permanently into the file. A
+                file is a named location on disk to store related information. We can access the stored information
+                (non-volatile) after the program termination.</p>
+            <p>The file-handling implementation is slightly lengthy or complicated in the other programming language,
+                but it is easier and shorter in Python. </p>
+            <p>In Python, files are treated in two modes as text or binary. The file may be in the text or binary
+                format, and each line of a file is ended with the special character.</p>
+
             <p>Hence, a file operation can be done in the following order.</p>
             <ul>
                 <li>Open a file</li>
@@ -91,7 +95,8 @@
                 <pre>file is opened successfully</pre>
             </div>
             <h3>Closing the file - close()</h3>
-            <p>Once you open a file, you should save it and close it right. To close the file use <code>close()</code>.</p>
+            <p>Once you open a file, you should save it and close it right. To close the file use <code>close()</code>.
+            </p>
             <div class="editor">
                 <code>#opens the file file.txt in read mode</code><br>
                 <code>testfile = open("file.txt","r")</code><br>
@@ -99,63 +104,95 @@
                 <code>print("file is opened successfully")</code>
                 <code>testfile.close()</code>
             </div>
-            <p>In the second line we are writing <code>testfile = open("file.txt","r")</code>. In the second argument of open is "r". What is "r" ?</p>
-            <p>"r" means read. if we want to write the file, we have to specify "w". Here are the list of the commands you can use.</p>
+            <p>In the second line we are writing <code>testfile = open("file.txt","r")</code>. In the second argument of
+                open is "r". What is "r" ?</p>
+            <p>"r" means read. if we want to write the file, we have to specify "w". Here are the list of the commands
+                you can use.</p>
             <table id="accessMode">
-                <tbody><tr>
-                    <th>Access mode</th>
-                    <th>Description</th>
+                <tbody>
+                    <tr>
+                        <th>Access mode</th>
+                        <th>Description</th>
                     </tr>
                     <tr>
-                    <td>r</td>
-                    <td>It opens the file to read-only mode. The file pointer exists at the beginning. The file is by default open in this mode if no access mode is passed.</td>
+                        <td>r</td>
+                        <td>It opens the file to read-only mode. The file pointer exists at the beginning. The file is
+                            by default open in this mode if no access mode is passed.</td>
                     </tr>
                     <tr>
-                    <td>rb</td>
-                    <td>It opens the file to read-only in binary format. The file pointer exists at the beginning of the file.</td>
+                        <td>rb</td>
+                        <td>It opens the file to read-only in binary format. The file pointer exists at the beginning of
+                            the file.</td>
                     </tr>
                     <tr>
-                    <td>r+</td>
-                    <td>It opens the file to read and write both. The file pointer exists at the beginning of the file.</td>
+                        <td>r+</td>
+                        <td>It opens the file to read and write both. The file pointer exists at the beginning of the
+                            file.</td>
                     </tr>
                     <tr>
-                    <td>rb+</td>
-                    <td>It opens the file to read and write both in binary format. The file pointer exists at the beginning of the file.</td>
+                        <td>rb+</td>
+                        <td>It opens the file to read and write both in binary format. The file pointer exists at the
+                            beginning of the file.</td>
                     </tr>
                     <tr>
-                    <td>w</td>
-                    <td>It opens the file to write only. It overwrites the file if previously exists or creates a new one if no file exists with the same name. The file pointer exists at the beginning of the file.</td>
+                        <td>w</td>
+                        <td>It opens the file to write only. It overwrites the file if previously exists or creates a
+                            new one if no file exists with the same name. The file pointer exists at the beginning of
+                            the file.</td>
                     </tr>
                     <tr>
-                    <td>wb</td>
-                    <td>It opens the file to write only in binary format. It overwrites the file if it exists previously or creates a new one if no file exists. The file pointer exists at the beginning of the file.</td>
+                        <td>wb</td>
+                        <td>It opens the file to write only in binary format. It overwrites the file if it exists
+                            previously or creates a new one if no file exists. The file pointer exists at the beginning
+                            of the file.</td>
                     </tr>
                     <tr>
-                    <td>w+</td>
-                    <td>It opens the file to write and read both. It is different from r+ in the sense that it overwrites the previous file if one exists whereas r+ doesn't overwrite the previously written file. It creates a new file if no file exists. The file pointer exists at the beginning of the file.</td>
+                        <td>w+</td>
+                        <td>It opens the file to write and read both. It is different from r+ in the sense that it
+                            overwrites the previous file if one exists whereas r+ doesn't overwrite the previously
+                            written file. It creates a new file if no file exists. The file pointer exists at the
+                            beginning of the file.</td>
                     </tr>
                     <tr>
-                    <td>wb+</td>
-                    <td>It opens the file to write and read both in binary format. The file pointer exists at the beginning of the file.</td>
+                        <td>wb+</td>
+                        <td>It opens the file to write and read both in binary format. The file pointer exists at the
+                            beginning of the file.</td>
                     </tr>
                     <tr>
-                    <td>a</td>
-                    <td>It opens the file in the append mode. The file pointer exists at the end of the previously written file if exists any. It creates a new file if no file exists with the same name.</td>
+                        <td>a</td>
+                        <td>It opens the file in the append mode. The file pointer exists at the end of the previously
+                            written file if exists any. It creates a new file if no file exists with the same name.</td>
                     </tr>
                     <tr>
-                    <td>ab</td>
-                    <td>It opens the file in the append mode in binary format. The pointer exists at the end of the previously written file. It creates a new file in binary format if no file exists with the same name.</td>
+                        <td>ab</td>
+                        <td>It opens the file in the append mode in binary format. The pointer exists at the end of the
+                            previously written file. It creates a new file in binary format if no file exists with the
+                            same name.</td>
                     </tr>
                     <tr>
-                    <td>a+</td>
-                    <td>It opens a file to append and read both. The file pointer remains at the end of the file if a file exists. It creates a new file if no file exists with the same name.</td>
+                        <td>a+</td>
+                        <td>It opens a file to append and read both. The file pointer remains at the end of the file if
+                            a file exists. It creates a new file if no file exists with the same name.</td>
                     </tr>
                     <tr>
-                    <td>ab+</td>
-                    <td>It opens a file to append and read both in binary format. The file pointer remains at the end of the file.</td>
+                        <td>ab+</td>
+                        <td>It opens a file to append and read both in binary format. The file pointer remains at the
+                            end of the file.</td>
                     </tr>
-                    </tbody>
+                </tbody>
             </table>
+            <p>So, Practice with this and try to write scripts on your own in your computer. Now for a practice we just
+                write a script which will create a text file in Desktop who ever executing it.</p>
+            <div class="editor">
+                <code>import os</code>
+                <code>f=open("C:/Users/"+os.getlogin()+"/Desktop/program.txt","w")</code>
+                <code>f.write("Successfully created a file which contains virus")</code>
+                <code>f.close()</code>
+            </div>
+            <p>In the first line we imported OS module.</p>
+            <p><strong>What is OS module ?</strong></p>
+            <p>The OS module in Python provides functions for creating and removing a directory (folder), fetching its contents, changing and identifying the current directory, etc. You first need to import the os module to interact with the underlying operating system.</p>
+            <p>In the second line we get the user name with os module method called getlogin() and writing some plain text in text file called program in desktop</p>
     </main>
 
 </body>
