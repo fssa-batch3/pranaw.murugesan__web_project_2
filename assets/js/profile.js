@@ -1,3 +1,4 @@
+
 const arr = JSON.parse(localStorage.getItem("userData")); // getting data from localStorage
 const profile = JSON.parse(localStorage.getItem("profile"));
 // console.log(profile)
