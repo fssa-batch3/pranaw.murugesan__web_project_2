@@ -31,6 +31,13 @@ const cards = [
     dataset:"script"
   },
   {
+    imgSource: "../assets/img/humanHack.jpg",
+    title: "Human Hacking",
+    desc: "A global security expert draws on psychological insights to help you master the art of social engineering",
+    redirection: "humanhack",
+    dataset:"humanhack"
+  },
+  {
     imgSource: "../assets/img/crossSite.jpg",
     title: "Cross-site script inclusion",
     desc: "XSS attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites",
@@ -44,13 +51,7 @@ const cards = [
     redirection: "stages",
     dataset:"kali"
   },
-  {
-    imgSource: "../assets/img/humanHack.jpg",
-    title: "Human Hacking",
-    desc: "A global security expert draws on psychological insights to help you master the art of social engineering",
-    redirection: "",
-    dataset:"humanhack"
-  },
+  
   {
     imgSource: "../assets/img/malware.jpg",
     title: "Malverting",
@@ -72,7 +73,7 @@ for (let i = cards.length - 1; i >= 0; i--) {
   const container = document.createElement("div");
   container.setAttribute("class", "container");
 
-  if (i > 3) {
+  if (i > 4) {
     container.setAttribute("class", "container upcoming");
   }
 
@@ -217,6 +218,21 @@ learnBtn[3].addEventListener("click",function(e){
         window.location.href="../learning_pages/scripting.html"
       }else{
         window.location.href="../learning_pages/scriptingIntro.html"
+      }
+    })
+  }else{
+    window.location.href="../learning_pages/scriptingIntro.html"
+  }
+  
+})
+learnBtn[4].addEventListener("click",function(e){
+  if(localStorage.getItem("course_list")){
+    console.log(e.target.dataset.id);
+    course_list.find(el=>{
+      if(el["enrolled_course"]==e.target.dataset.id){
+        window.location.href="../learning_pages/humanHacking.html"
+      }else{
+        window.location.href="../learning_pages/humanHacking.html"
       }
     })
   }else{

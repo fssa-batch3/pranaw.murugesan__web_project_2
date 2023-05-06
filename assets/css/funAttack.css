@@ -4,7 +4,9 @@
 #cmatrix{
   height: 20%;
 }
-.editor{
+.editor, #output{
   padding: 2%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 2%;
+  margin-bottom: 2% ;
 }
