@@ -10,6 +10,7 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../assets/css/commonUi.css">
     <link rel="stylesheet" href="../assets/css/funAttack.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -17,7 +18,6 @@
 </head>
 
 <body>
-
     <!-- header starting -->
     <header>
         <div>
@@ -29,58 +29,72 @@
             <a href="../profile/profile.html"><button>Profile</button></a>
         </nav>
     </header>
+    <div class="mainDiv">
+        <aside>
+            <a href="./mobileHacking.html">Introduction</a>
+            <a href="#">Termux walkthrough</a>
+            <a href="./linuxCommands.html">Linux Commands</a>
+            <a href="#">Spamming</a>
+            <a href="#">Phishing</a>
+            <a href="#">Metasploit</a>
+            <a href="./funAttacks.html">Fun Attacks</a>
+        </aside>
+        <main>
+            <div class="Head">
+                <div>
+                    <h1>Termux walkthrough</h2>
+                </div>
+            </div>
+            <hr>
+            <p>I think you completed our first section and got here. Lets learn some of termux options</p>
+            <img id="termux_interface" src="../assets/img/termux_interface.png" alt="">
+            <p>In the first section they written some greetings like " Welcome to Termux ".
+                Then they given some links for their community, If you interested and have time check it out.
+                Next Comes the the working with packages, in this they will teach you how to work and install with packages</p>
 
-    <!-- Navigation Bar -->
-    <aside>
-        <a href="./mobileHacking.html">Introduction</a>
-        <a href="#">Termux walkthrough</a>
-        <a href="./linuxCommands.html">Linux Commands</a>
-        <a href="">Spamming</a>
-        <a href="">Phishing</a>
-        <a href="">Metasploit</a>
-        <a href="./funAttacks.html">Fun attacks with friends</a>
-    </aside>
+                <ul>
+                    <li>Search pakages: <code>pkg search &lt;query&gt;</code></li>
+                    <li>Install a pakage: <code>pkg install &lt;package&gt;</code></li>
+                    <li>Upgrade Packages: <code>pkg upgrade</code></li>
+                </ul>
 
-    <!-- Termux walkthrough part starts here -->
-    <main>
-        <h1>Termux walkthrough</h1>
-        <p>I think you completed our first section and got here. Lets learn some of termux options</p>
-        <!-- image reference -->
-        <img class="termuxImage" src="../assets/img/termux_interface.png" alt="">
-        <p>In the first section they written some greetings like " Welcome to Termux ". <br> Then they given some links
-            for their community, If you interested and have time check it out. <br> Next Comes the the working with
-            packages, in this they will teach you how to work and install with packages</p>
-
-            <!-- Giving commands for user -->
+            <p>So these are the commands to search, install and upgrade packages
+                In the last line there's a pointer blinking right !?... You are going to write commands there.
+                let's do some hacker fun thing. Lets install CMATRIX. You may know about that.</p>
+            <img id="cmatrix" src="../assets/img/cmatrix.jpeg" alt="">
+        <p>Looks like hacker right. lets install this. First you have to execute the following command :</p>
         <ul>
-            <li>Search pakages: <code><strong>pkg search &lt;query&gt;</strong></code></li>
-            <li>Install a pakage: <code><strong>pkg install &lt;package&gt;</strong></code></li>
-            <li>Upgrade Packages: <code><strong>pkg upgrade</strong></code></li>
+            <li><code>pkg install cmatrix</code></li>
         </ul>
-
-        <!-- Description for commands -->
-        <p>So these are the commands to search, install and upgrade packages <br> In the last line there's a pointer
-            blinking right !?... You are going to write commands there. <br> let's do some hacker fun thing. Lets
-            install CMATRIX. You may know about that.</p>
-        <img class="cmatrix" src="../assets/img/cmatrix.jpeg" alt="errorLoadingCmatrix">
-        <p>Looks like hacker right. lets install this. First you have to execute the following command : <br>
-        <ul>
-            <li><code><strong>pkg install cmatrix</strong></code></li>
-        </ul>
-        As per mentioned in the app.</p>
-        <div>
-            <img class="cmatrix" src="../assets/img/cmatrixLoading.jpeg" alt="">
-        </div>
-
-        <!-- Manual for Termux -->
-        <p>After you typing the command it will get loading... wait for few seconds untill it is over. After completing
-            100%. Try typing " <b><code>cmatrix</code></b> " without any capital letters and hit enter.</p>
-        <p>After you hit enter it start to come like green numbers and letters and you can Show off to your friend with
-            this.</p> And now how to stop that !?... click <code><b>CTRL + C</b></code> in your keyboard to end this.
-        Now it is all done. let's say you have to shut down termux, how will you do it !?...</p>
-        <p>type <code><b>exit</b></code> and hit enter and you'll get out of the app.</p>
+        <p>As per mentioned in the app.</p>
+        <img id="cmatrixLoading" src="../assets/img/cmatrixLoading.jpeg" alt="">
+        <p>After you typing the command it will get loading... wait for few seconds untill it is over. After completing 100%. Try typing " <code>cmatrix</code> " without any capital letters and hit enter.</p>
+        <p>After you hit enter it start to come like green numbers and letters and you can Show off to your friend with this.</p>
+        <p>And now how to stop that !?... click <code>CTRL + C</code> in your keyboard to end this. Now it is all done. let's say you have to shut down termux, how will you do it !?...</p>
+        <p>type <code>exit</code> and hit enter and you'll get out of the app.</p>
         <p>Now you can install lot of scripts on your own by going to and surfing into github</p>
-    </main>
+        </main>
+        <div id="rightsidebar">
+            <div class="SideBar">
+                <div class="titleHead"><strong>Do you know</strong></div>
+                <div class="tags">
+                    <p>Termux combines powerful terminal emulation with an extensive Linux package
+                        collection.</p>
+                </div>
+            </div>
+            <div class="SideBar">
+                <div class="titleHead"><strong>Custom Filters</strong></div>
+                <div class="tags">
+                    <a>Create a custom filter</a>
+                </div>
+            </div>
+            <div class="SideBar">
+                <div class="titleHead"><strong>Ignored Tags</strong></div>
+                <div class="tags">
+                    <a>Add an ignored tag</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>

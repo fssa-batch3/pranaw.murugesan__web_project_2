@@ -1,0 +1,8 @@
+#termuxDownload, #termux_interface,#termux_code_running{
+    width: 50%;
+    margin-right: 5%;
+}
+.termuxInterfaceBlock{
+    display: flex;
+    margin-bottom: 5%;
+}

@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+main {
+  margin-left: 17%;
+  margin-right: 2%;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  width: 80%;
+}
+/* header end  */
+header {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10vh;
+  height: 10vh;
+  top: 0;
+  position: fixed;
+  background-color: blueviolet;
+}
+header div h2 {
+  margin-top: 15%;
+  margin-left: 15%;
+  color: white;
+}
+header > div > img {
+  height: 100%;
+}
+header > nav {
+  display: flex;
+  z-index: 100;
+}
+button {
+  border-radius: 1rem;
+  padding: 5%;
+  padding-right: 1em;
+  padding-left: 1em;
+  border: none;
+  background-color: whitesmoke;
+}
+aside {
+  left: 0%;
+  position: fixed;
+  flex-direction: column;
+  display: flex;
+  width: 15%;
+  top: 10%;
+  height: 100%;
+  margin-top: 0;
+  border-right: black 1px solid;
+}
+#rightsidebar {
+  width: 30%;
+  margin-top: 10%;
+  margin-right: 3%;
+  height: 100%;
+}
+a {
+  margin-right: 1em;
+  margin-top: 2em;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+/* Main div starts here */
+
+.mainDiv {
+  display: flex;
+  /* display: none; */
+}
+.SideBar {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 15%;
+}
+.SideBar .titleHead {
+  background-color: #ffe5ca;
+  padding: 1%;
+  text-align: center;
+}
+.tags {
+  padding: 5%;
+}
+.tags a, .secondSection > a, .selectedTags > a {
+  background-color: lightblue;
+  color: #2f58cd;
+  padding-right: 5%;
+  padding-left: 5%;
+  border-radius: 5%;
+}
+
+/* web spoofing page CSS starts here */
+
+.popUpMail,.popUpConfirm{
+  margin-left:20%;
+  margin-right:15%;
+  margin-top:15%;
+  position: fixed;
+  width: 50%;
+  background-color:#e5e5e5;
+  padding: 5%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 100;
+  display: block;
+}
+.popUpConfirm{
+  display: none;
+}
+#str{
+    color: blue;
+}
+#mailSpoof{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 10%;
+  margin-bottom: 10%;
+}
+#instruction{
+  color: red;
+}
+#toDo{
+  color: blue;
+}

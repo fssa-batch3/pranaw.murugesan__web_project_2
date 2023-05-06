@@ -15,6 +15,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!-- header starting -->
     <header>
@@ -27,21 +28,21 @@
             <a href="../profile/profile.html"><button>Profile</button></a>
         </nav>
     </header>
-    
+
     <div class="mainDiv">
         <aside>
             <a href="#">Questions</a>
             <a href="#">Tags</a>
             <a href="">Users</a>
+            <a href="">Your Answers</a>
         </aside>
         <main>
-            <h3>Where i can learn MySql Injection</h3>
+            <h3 id="head"></h3>
             <caption>asked today</caption>
             <caption>modified today</caption>
             <caption>viewed 26 times</caption>
             <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit pariatur eveniet a quisquam itaque magnam alias cum perspiciatis ad laboriosam, corrupti sit, non recusandae in sequi iure facilis incidunt quas!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorum nam fuga commodi, deserunt excepturi doloremque, possimus incidunt, odit cupiditate minus deleniti nobis iste magni impedit ratione animi libero maxime.</p>
+            <p id="desc"></p>
             <div class="selectedTags">
                 <a href="">MySql</a>
                 <a href="">Sql</a>
@@ -49,21 +50,26 @@
             </div>
             <hr>
             <div class="answersSection">
-                <h3>2 Answers</h3>
-                <p>answered by : <a style="color:blue; text-decoration: underline;" href="">sparkyOp</a></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto culpa tempora, quia unde numquam, at ullam rerum, minus reiciendis aperiam aut doloremque itaque sapiente? Eveniet mollitia officiis nesciunt maxime laboriosam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium adipisci cum, magnam maxime architecto repellat earum non ut, veniam optio beatae nostrum numquam eos labore vero in maiores atque quibusdam?</p>
-                <p>answered by : <a style="color:blue; text-decoration: underline;" href="">Coder</a></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto culpa tempora, quia unde numquam, at ullam rerum, minus reiciendis aperiam aut doloremque itaque sapiente? Eveniet mollitia officiis nesciunt maxime laboriosam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium adipisci cum, magnam maxime architecto repellat earum non ut, veniam optio beatae nostrum numquam eos labore vero in maiores atque quibusdam?</p>
+                <h3 id="YourAnswerDiv"></h3>
+                <div class="answeredSection">
+                    <!-- <p>answered by : <a style="color:blue; text-decoration: underline;" id="USER">sparkyOp</a></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto culpa tempora, quia unde numquam,
+                        at ullam rerum, minus reiciendis aperiam aut doloremque itaque sapiente? Eveniet mollitia
+                        officiis nesciunt maxime laboriosam. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Accusantium adipisci cum, magnam maxime architecto repellat earum non ut, veniam optio beatae
+                        nostrum numquam eos labore vero in maiores atque quibusdam?</p> -->
+                </div>
                 <hr>
                 <h3>Your Answer</h3>
                 <form id="yourAnswer">
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
                         <textarea class="form-control" id="answerText" rows="3" required></textarea>
-                      </div>
-                    <button type="submit" class="btn btn-info">Post Your Answer</button>
+                    </div>
+                    <button class="btn btn-info">Post Your Answer</button>
                 </form>
-                <p>Not the answer you're looking for? Browse other questions tagged <a href="">MySql</a><a href="">Sql</a><a href="">Hacking</a></p> or <button type="button" class="btn btn-warning">Ask your own question</button>
+                <p>Not the answer you're looking for? Browse other questions tagged <a href="">MySql</a><a
+                        href="">Sql</a><a href="">Hacking</a></p> or <button type="button" class="btn btn-warning">Ask
+                    your own question</button>
             </div>
 
         </main>
@@ -96,12 +102,107 @@
         </div>
     </div>
     <script>
-        // let yourAnswer = document.getElementById("yourAnswer")
-        // yourAnswer.addEventListener("submit",function(){
-        //     let answerUserTyped = document.getElementById("answerText").value
-        // })
+
+        let url = window.location.search
+        let search = new URLSearchParams(url)
+        let id = search.get("id")
+
+        let forum_arr = JSON.parse(localStorage.getItem("forum"))
+        let head = document.getElementById("head")
+        let desc = document.getElementById("desc")
+        let answersStorage;
+
+
+        let forum_obj = forum_arr.find(function (obj) {
+            if (id === obj["id"] + "") {
+                return true
+            }
+            else {
+                return false
+            }
+        })
+        head.innerText = forum_obj["questionName"]
+        desc.innerText = forum_obj["questionDesc"]
+
+
+        let userData = JSON.parse(localStorage.getItem("userData"))
+        let profile = JSON.parse(localStorage.getItem("profile"))
+        let yourAnswer = document.getElementById("yourAnswer")
+        let answerUserTyped;
+        let profileName;
+        let forum = JSON.parse(localStorage.getItem("forum"))
+        let answerId = Math.floor(Math.random() * 100);
+
+        userData.find(e => {
+            if (e["email"] == profile["email"]) {
+                profileName = e["firstname"]
+            }
+        })
+
+        yourAnswer.addEventListener("submit", function (e) {
+            e.preventDefault()
+            if (localStorage.getItem("forum")) {
+                forum = JSON.parse(localStorage.getItem("forum"))
+            }
+            // else {
+            //     answer_arr = []
+            // }
+            answerUserTyped = document.getElementById("answerText").value
+            answersStorage = {
+                "answeredBy":profileName,
+                "answer": answerUserTyped,
+            }
+            for (let i = 0; i < forum.length; i++) {
+            //     if (heading == forum[i]["questionName"]) {
+            //         //     answersStorage = {
+            //         //     "answer": answerUserTyped,
+            //         // }
+            //         forum[i]["answer"].push(answerUserTyped)
+            //     }
+            forum[i]["answer"].push(answersStorage)
+            localStorage.setItem("forum", JSON.stringify(forum))
+            location.reload()
+            }
+            // forum.push(answersStorage)
+            
+
+        })
+
+        for (let i = 0; i < forum[0]["answer"].length; i++) {
+        //     //         
+        //     //         answeredSection.innerHTML = `<p>answered by : <a style="color:blue; text-decoration: underline;" href="">${profileName}</a></p>
+        //     // <p>$</p>`
+        //     //         document.querySelector(".answeredSection").prepend(answeredSection)
+            let answeredSection = document.createElement("div")
+            answeredSection.setAttribute("class", "answeredSection")
+            document.querySelector(".answeredSection").append(answeredSection)
+
+            let answerParaTag = document.createElement("p")
+            answerParaTag.innerText = `answered by ${profileName}`
+            document.querySelector(".answeredSection").append(answerParaTag)
+
+            let answer = document.createElement("p")
+            // answer.innerText=forum_obj["answer"]
+            answer.innerText=forum[0]["answer"][i]["answer"];
+            console.log(forum[0]["answer"][i]["answer"])
+            document.querySelector(".answeredSection").append(answer)
+
+            // for (let i = 0; i < 1; i++) {
+                    // console.log(forum[i]["answer"][i]["answer"]);
+                   
+                
+            // }
+            
+
+       
+        }
+
+
+
+
+
     </script>
-    
+
 </body>
 
 </html>

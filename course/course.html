@@ -23,14 +23,36 @@
       <a href="../profile/profile.html"><button>Profile</button></a>
     </nav>
   </header>
+  <div class="popUpConfirm">
+    <h2>Note:</h3>
+    <h2>Some Popups on our website will scare you, it may look like real but it is not. It is only for educational
+      purpose. Do not get scared and close our website</h1>
+    <button id="okayBtn" class="btn btn-success">OKAY</button>
+  </div>
+  
   <input type="search" id="searchCourse" placeholder="Search Courses...">
-  <div id="searchResults" style="display: none;">
+
 
   </div>
   <main>
   </main>
   <!-- <script src="../assets/js/addCourse.js"></script> -->
   <script src="../assets/js/course.js"></script>
-
+  <script>
+    const popUpConfirm = document.querySelector(".popUpConfirm")
+    const okayBtn = document.querySelector("#okayBtn")
+    function confirmationPopUp() {
+      popUpConfirm.classList.add("view")
+      document.querySelector("main").style.filter = "blur(8px)"
+      document.querySelector("header").style.filter = "blur(8px)"
+    }
+    setTimeout(confirmationPopUp, 2000)
+    okayBtn.addEventListener("click", function () {
+      popUpConfirm.classList.remove("view")
+      document.querySelector("main").style.filter = null
+      document.querySelector("header").style.filter = null
+    })
+  </script>
 </body>
+
 </html>

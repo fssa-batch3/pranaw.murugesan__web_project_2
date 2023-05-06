@@ -17,7 +17,7 @@ header {
   height: 15vh;
   padding-left: 7%;
   padding-right: 7%;
-  background-color: #3795BD;
+  background-color: blueviolet;
 }
 header div h2{
   margin-top: 15%;
@@ -48,7 +48,7 @@ a {
   background-color: #82AAE3;
   margin: 5%;
   text-align: center;
-  height:55vh;
+  height:60vh;
   border-radius: 5%;
   padding: 1%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -99,4 +99,27 @@ main{
 }
 #searchCourse:valid{
   outline: none;
+}
+.popUpConfirm{
+  margin-left:20%;
+  margin-right:15%;
+  margin-top:10%;
+  position: fixed;
+  width: 50%;
+  background-color:#FFD95A;
+  padding: 5%;
+  /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  z-index: 100;
+  display: none;
+  color: black;
+}
+.view{
+  display: block;
+}
+#okayBtn{
+  background-color: green;
+  padding: 2%;
+  cursor: pointer;
+  color: white;
 }

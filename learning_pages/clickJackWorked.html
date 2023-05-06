@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-top: 10%;
+  background-color: black;
+  color:whitesmoke;
+}
+#ip{
+  color: red;
+}
+#goBack{
+  color: lightgreen;
+}
+</style>
+<body>
+    <img src="https://media.tenor.com/GwhDgXiOYC0AAAAC/patrick-star-evil-laugh.gif" alt="">
+    <h1>You have been clickjacked</h1>
+    <h1>We have collected your data</h1>
+    <h1 id="ip"></h1>
+    <h1>HAHAHAHAHHAHAH.....</h1>
+    <h1>How are you feeling now</h1>
+    <h1 id="goBack">(Go back to the course, start learning)</h1>
+
+    <script type="application/javascript">
+      function getIP(json) {
+        document.getElementById("ip").innerText="Your ip address is "+ json.ip;
+      }
+    </script>
+    
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</body>
+</html>

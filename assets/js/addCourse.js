@@ -19,7 +19,7 @@ enroll.addEventListener("click", (e) => {
   arr.push(enrolled_data);
 
   localStorage.setItem("course_list", JSON.stringify(arr));
-  window.location.href = "./webhacking.html";
+  // window.location.href = "./webhacking.html";
 });
 
 // arr.find((el) => {
