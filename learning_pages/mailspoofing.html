@@ -87,7 +87,7 @@
             <a href="../profile/profile.html"><button>Profile</button></a>
         </nav>
     </header>
-    <!-- <div class="popUpMail">
+    <div class="popUpMail">
         <strong id="str">Before starting with this course, please enter your original email id to experience mock Mail
             Spoofing</strong>
         <form>
@@ -102,7 +102,7 @@
         <h3>Have you seen the mail ?</h3>
         <button id="BtnYes" class="btn btn-success">Yes</button>
         <button id="BtnNo" class="btn btn-warning">No</button>
-    </div> -->
+    </div>
     <div class="mainDiv">
         <aside>
             <a href="./webhacking.html">Clickjacking</a>
@@ -120,6 +120,7 @@
             <img id="mailSpoof" src="../assets/img/clickjack_gmail.png" alt="image_err">
             <h3 id="instruction"><strong>In this email, Attacker try to scare the target by telling he know all about him. Also he telling that the target have only 24 hours. By telling like this, the target will get frightened. The person cannot do anything at that time. Also he insisting that to click the link.</strong></h3>
             <h4 id="toDo"><strong>At the time like this, Do not get afraid of this. Just calm down and take a deep breathe, calmly report this kind of emails if have received</strong></h4>
+            <h4>Cyber Crime Helpline is 1930.</h4>
         </main>
         <div id="rightsidebar">
             <div class="SideBar">
@@ -146,49 +147,49 @@
     </div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-        // const popUpMail = document.querySelector(".popUpMail")
-        // const popUpConfirm = document.querySelector(".popUpConfirm")
-        // const BtnYes = document.querySelector("#BtnYes")
-        // const BtnNo = document.querySelector("#BtnNo")
+        const popUpMail = document.querySelector(".popUpMail")
+        const popUpConfirm = document.querySelector(".popUpConfirm")
+        const BtnYes = document.querySelector("#BtnYes")
+        const BtnNo = document.querySelector("#BtnNo")
 
-        // let message = `<h3>Hello<br>
-        //     I Hacked your computer and I've compromised it fully.<br>
-        //     I know what kind of people you've been talking to, what kind of videos that<br>
-        //     you're watching. I know you wouldn'n believe me. But, let me confirm this<br>
-        //     by sending your password 'xyz123'<br><br>
-        //     If you don't want your information to get leaked, contact to this email scryptify.corporation@gmail.com<br><br>
-        //     You have only 24 hours to respond.</h3>`
-        // document.querySelector("form").addEventListener("submit", function (e) {
-        //     e.preventDefault()
-        //     let email = document.getElementById("email").value
-        //     Email.send({
-        //         Host: "smtp.elasticemail.com",
-        //         Username: "scryptify.corp@gmail.com",
-        //         Password: "AC52B297611FB767F3C069A34A87E8AD46E7",
-        //         To: email,
-        //         From: "scryptify.corporation@gmail.com",
-        //         Subject: "YOUR COMPUTER IS HACKED",
-        //         Body: message,
-        //         BodyHtml: message
-        //     }).then(
-        //         message => alert(message)
-        //     );
-        //     console.log("submited");
-        //     popUpMail.style.display = "none"
-        //     popUpConfirm.style.display = "block"
-        // })
-        // document.querySelector(".mainDiv").style.filter = "blur(8px)"
-        // document.querySelector("header").style.filter = "blur(8px)"
+        let message = `<h3>Hello<br>
+            I Hacked your computer and I've compromised it fully.<br>
+            I know what kind of people you've been talking to, what kind of videos that<br>
+            you're watching. I know you wouldn'n believe me. But, let me confirm this<br>
+            by sending your password 'xyz123'<br><br>
+            If you don't want your information to get leaked, contact to this email scryptify.corporation@gmail.com<br><br>
+            You have only 24 hours to respond.</h3>`
+        document.querySelector("form").addEventListener("submit", function (e) {
+            e.preventDefault()
+            let email = document.getElementById("email").value
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "scryptify.corp@gmail.com",
+                Password: "AC52B297611FB767F3C069A34A87E8AD46E7",
+                To: email,
+                From: "scryptify.corporation@gmail.com",
+                Subject: "YOUR COMPUTER IS HACKED",
+                Body: message,
+                BodyHtml: message
+            }).then(
+                message => alert(message)
+            );
+            console.log("submited");
+            popUpMail.style.display = "none"
+            popUpConfirm.style.display = "block"
+        })
+        document.querySelector(".mainDiv").style.filter = "blur(8px)"
+        document.querySelector("header").style.filter = "blur(8px)"
 
-        // BtnYes.addEventListener("click",function(){
-        //     popUpConfirm.style.display = "none"
-        //     document.querySelector(".mainDiv").style.filter = null
-        //     document.querySelector("header").style.filter = null
-        // })
-        // BtnNo.addEventListener("click",function(){
-        //     popUpConfirm.style.display = "none"
-        //     popUpMail.style.display = "block"
-        // })
+        BtnYes.addEventListener("click",function(){
+            popUpConfirm.style.display = "none"
+            document.querySelector(".mainDiv").style.filter = null
+            document.querySelector("header").style.filter = null
+        })
+        BtnNo.addEventListener("click",function(){
+            popUpConfirm.style.display = "none"
+            popUpMail.style.display = "block"
+        })
             
         
     </script>
