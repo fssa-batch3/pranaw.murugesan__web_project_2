@@ -101,7 +101,7 @@ a {
 
 /* web spoofing page CSS starts here */
 
-.popUpMail,.popUpConfirm{
+.popUpMail,.popUpConfirm,.mailSent{
   margin-left:20%;
   margin-right:15%;
   margin-top:15%;
@@ -113,7 +113,7 @@ a {
   z-index: 100;
   display: block;
 }
-.popUpConfirm{
+.popUpConfirm,.mailSent{
   display: none;
 }
 #str{
