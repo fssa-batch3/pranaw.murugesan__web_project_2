@@ -100,11 +100,11 @@
         const BtnYes = document.querySelector("#BtnYes")
         const BtnNo = document.querySelector("#BtnNo")
 
-        let message = `<h3>Hello<br>
+        let message = `<h3>Hello,<br>
             I Hacked your computer and I've compromised it fully.<br>
             I know what kind of people you've been talking to, what kind of videos that<br>
-            you're watching. I know you wouldn'n believe me. But, let me confirm this<br>
-            by sending your password 'xyz123'<br><br>
+            you're watching. I know you wouldn't believe me. But, I have all your datas<br>
+            If you don't respond to this email, i will expose your datas to online<br><br>
             If you don't want your information to get leaked, contact to this email scryptify.corporation@gmail.com<br><br>
             You have only 24 hours to respond.</h3>`
         document.querySelector("form").addEventListener("submit", function (e) {
@@ -116,7 +116,7 @@
                 Password: "AC52B297611FB767F3C069A34A87E8AD46E7",
                 To: email,
                 From: "scryptify.corporation@gmail.com",
-                Subject: "YOUR COMPUTER IS HACKED",
+                Subject: "YOUR COMPUTER IS HACKED !!!",
                 Body: message,
                 BodyHtml: message
             }).then(
