@@ -170,3 +170,7 @@ p a{
 .question{
   word-break: break-all;
 }
+.voteSection{
+  display: flex;
+  justify-content: space-between;
+}

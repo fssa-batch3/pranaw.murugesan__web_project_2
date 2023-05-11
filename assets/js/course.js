@@ -9,13 +9,13 @@ const cards = [
     redirection: "stages",
     dataset: "thingsYouShouldKnow"
   },
-  {
-    imgSource: "../assets/img/web.jpg",
-    title: "Web Hacking",
-    desc: "Things which are all done by hackers by web",
-    redirection: "webhack",
-    dataset:"web"
-  },
+  // {
+  //   imgSource: "../assets/img/web.jpg",
+  //   title: "Web Hacking",
+  //   desc: "Things which are all done by hackers by web",
+  //   redirection: "webhack",
+  //   dataset:"web"
+  // },
   {
     imgSource: "../assets/img/mobileHacking.jpg",
     title: "Hacking through mobile",
@@ -54,7 +54,7 @@ const cards = [
   
   {
     imgSource: "../assets/img/malware.jpg",
-    title: "Malverting",
+    title: "Malvertising",
     desc: "a relatively new cyberattack technique that injects malicious code within digital ads",
     redirection: "",
     dataset:"malware"
@@ -73,7 +73,7 @@ for (let i = cards.length - 1; i >= 0; i--) {
   const container = document.createElement("div");
   container.setAttribute("class", "container");
 
-  if (i > 4) {
+  if (i > 3) {
     container.setAttribute("class", "container upcoming");
   }
 
@@ -182,21 +182,21 @@ learnBtn[0].addEventListener("click",function(e){
   }
   
 })
+// learnBtn[1].addEventListener("click",function(e){
+//   if(localStorage.getItem("course_list")){
+//     console.log(e.target.dataset.id);
+//   course_list.find(el=>{
+//     if(el["enrolled_course"]==e.target.dataset.id){
+//       window.location.href="../learning_pages/webhacking.html"
+//     }else{
+//       window.location.href="../learning_pages/webhackingintro.html"
+//     }
+//   })
+//   }else{
+//     window.location.href="../learning_pages/webhackingintro.html"
+//   }
+// })
 learnBtn[1].addEventListener("click",function(e){
-  if(localStorage.getItem("course_list")){
-    console.log(e.target.dataset.id);
-  course_list.find(el=>{
-    if(el["enrolled_course"]==e.target.dataset.id){
-      window.location.href="../learning_pages/webhacking.html"
-    }else{
-      window.location.href="../learning_pages/webhackingintro.html"
-    }
-  })
-  }else{
-    window.location.href="../learning_pages/webhackingintro.html"
-  }
-})
-learnBtn[2].addEventListener("click",function(e){
   if(localStorage.getItem("course_list")){
     console.log(e.target.dataset.id);
   course_list.find(el=>{
@@ -210,7 +210,7 @@ learnBtn[2].addEventListener("click",function(e){
     window.location.href="../learning_pages/mobileHackingIntro.html"
   }
 })
-learnBtn[3].addEventListener("click",function(e){
+learnBtn[2].addEventListener("click",function(e){
   if(localStorage.getItem("course_list")){
     console.log(e.target.dataset.id);
     course_list.find(el=>{
@@ -225,7 +225,7 @@ learnBtn[3].addEventListener("click",function(e){
   }
   
 })
-learnBtn[4].addEventListener("click",function(e){
+learnBtn[3].addEventListener("click",function(e){
   if(localStorage.getItem("course_list")){
     console.log(e.target.dataset.id);
     course_list.find(el=>{

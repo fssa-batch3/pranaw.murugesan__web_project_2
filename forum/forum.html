@@ -232,15 +232,10 @@ if (localStorage.getItem("forum")) {
   // append the new div to the container
   var container = document.querySelector("main");
   container.appendChild(newQuestion);
-
   let name = document.querySelectorAll(".question")
-
   name[i].addEventListener("click",function () {
-  
     window.location.href = "./answer.html?id="+answer[i]["id"]
   })
-
-
 }
 }
 

@@ -56,7 +56,7 @@ function login() {
     // alert("Logged in")
     swal("Hooyah !", "You have logged in !").then((value) => {
       localStorage.setItem("profile", JSON.stringify(login));
-      window.location.href = "../course/course.html";
+      window.location.href = "../course/choose.html";
     });
   } else {
     // alert('Account doesn\'t exist')

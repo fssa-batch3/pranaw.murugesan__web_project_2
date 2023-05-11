@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../assets/css/course.css">
+    <link rel="stylesheet" href="../assets/css/choosePage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Scryptify</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h2>Scryptify</h2>
+        </div>
+        <nav>
+            <a href="../course/choose.html"><button>Home</button></a>
+            <a href="#"><button>About</button></a>
+            <a href="../forum/forum.html"><button>Forum</button></a>
+            <a href="../profile/profile.html"><button>Profile</button></a>
+        </nav>
+    </header>
+    <div class="popUpConfirm">
+        <h2>Note:</h3>
+        <h2>Some Popups on our website will scare you, it may look like real but it is not. It is only for educational
+          purpose. Before Doing anything, Please read it fully. Do not get scared and close our website</h1>
+        <button id="okayBtn" class="btn btn-success">OKAY</button>
+      </div>
+    <main>
+        <div class="container">
+            <img src="../assets/img/clickJacking.jpg">
+            <h3>Click Jacking</h3>
+            <a href="./webhacking.html"><button class="chooseBtn" role="button">Experience ClickJacking</button></a>
+        </div>
+        <div class="container"><img src="../assets/img/mailSpoofing.jpg">
+            <h3>Mail Spoofing</h3>
+            <a href="./mailspoofing.html"><button class="chooseBtn">Experience Mail Spoofing</button></a>
+        </div>
+    </main>
+
+
+        
+        
+    </style>
+      <script>
+        const popUpConfirm = document.querySelector(".popUpConfirm")
+        const okayBtn = document.querySelector("#okayBtn")
+        function confirmationPopUp() {
+          popUpConfirm.classList.add("view")
+          document.querySelector("main").style.filter = "blur(8px)"
+          document.querySelector("header").style.filter = "blur(8px)"
+        }
+        setTimeout(confirmationPopUp, 2000)
+        okayBtn.addEventListener("click", function () {
+          popUpConfirm.classList.remove("view")
+          document.querySelector("main").style.filter = null
+          document.querySelector("header").style.filter = null
+        })
+      </script>
+</body>
+
+</html>

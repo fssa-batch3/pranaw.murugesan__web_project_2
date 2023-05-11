@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -52,13 +53,10 @@
             <div class="answersSection">
                 <h3 id="YourAnswerDiv"></h3>
                 <div class="answeredSection">
-                    <!-- <p>answered by : <a style="color:blue; text-decoration: underline;" id="USER">sparkyOp</a></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto culpa tempora, quia unde numquam,
-                        at ullam rerum, minus reiciendis aperiam aut doloremque itaque sapiente? Eveniet mollitia
-                        officiis nesciunt maxime laboriosam. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Accusantium adipisci cum, magnam maxime architecto repellat earum non ut, veniam optio beatae
-                        nostrum numquam eos labore vero in maiores atque quibusdam?</p> -->
+
                 </div>
+
+
                 <hr>
                 <h3>Your Answer</h3>
                 <form id="yourAnswer">
@@ -149,53 +147,87 @@
             // }
             answerUserTyped = document.getElementById("answerText").value
             answersStorage = {
-                "answeredBy":profileName,
+                "answeredBy": profileName,
                 "answer": answerUserTyped,
             }
             for (let i = 0; i < forum.length; i++) {
-            //     if (heading == forum[i]["questionName"]) {
-            //         //     answersStorage = {
-            //         //     "answer": answerUserTyped,
-            //         // }
-            //         forum[i]["answer"].push(answerUserTyped)
-            //     }
-            forum[i]["answer"].push(answersStorage)
-            localStorage.setItem("forum", JSON.stringify(forum))
-            location.reload()
+                //     if (heading == forum[i]["questionName"]) {
+                //         //     answersStorage = {
+                //         //     "answer": answerUserTyped,
+                //         // }
+                //         forum[i]["answer"].push(answerUserTyped)
+                //     }
+                forum[i]["answer"].push(answersStorage)
+                localStorage.setItem("forum", JSON.stringify(forum))
+                location.reload()
             }
             // forum.push(answersStorage)
-            
+
 
         })
+        forum.find((e) => {
+            // finding user with id
+            if (e["id"] == id) {
+                // finding answer
+                e["answer"].find((el) => {
 
-        for (let i = 0; i < forum[0]["answer"].length; i++) {
-        //     //         
-        //     //         answeredSection.innerHTML = `<p>answered by : <a style="color:blue; text-decoration: underline;" href="">${profileName}</a></p>
-        //     // <p>$</p>`
-        //     //         document.querySelector(".answeredSection").prepend(answeredSection)
-            let answeredSection = document.createElement("div")
-            answeredSection.setAttribute("class", "answeredSection")
-            document.querySelector(".answeredSection").append(answeredSection)
+                    // Appending div
+                    const answeredSection = document.createElement("div");
+                    answeredSection.classList.add("answeredSection");
 
-            let answerParaTag = document.createElement("p")
-            answerParaTag.innerText = `answered by ${profileName}`
-            document.querySelector(".answeredSection").append(answerParaTag)
+                    const strong = document.createElement("strong");
+                    strong.textContent = `Answered by ${el["answeredBy"]}`;
+                    answeredSection.appendChild(strong);
 
-            let answer = document.createElement("p")
-            // answer.innerText=forum_obj["answer"]
-            answer.innerText=forum[0]["answer"][i]["answer"];
-            console.log(forum[0]["answer"][i]["answer"])
-            document.querySelector(".answeredSection").append(answer)
 
-            // for (let i = 0; i < 1; i++) {
-                    // console.log(forum[i]["answer"][i]["answer"]);
-                   
-                
-            // }
-            
+                    const voteSection = document.createElement("div")
+                    voteSection.setAttribute("class", "voteSection")
+                    answeredSection.appendChild(voteSection)
 
-       
-        }
+                    const p = document.createElement("p");
+                    p.textContent = el["answer"];
+                    voteSection.appendChild(p);
+
+                    const like = document.createElement("button");
+                    like.setAttribute("id", "likeBtn")
+                    voteSection.appendChild(like);
+
+                    const likeIcon = document.createElement("i");
+                    likeIcon.setAttribute("class", "fa-regular fa-thumbs-up")
+                    likeIcon.setAttribute("id", "likeIcon")
+                    like.appendChild(likeIcon);
+
+                    document.querySelector(".answeredSection").appendChild(answeredSection)
+                  
+                })
+            }
+        })
+
+        const likeBtn = document.querySelectorAll("#likeBtn")
+        const likeIcon = document.querySelectorAll("#likeIcon")
+        let likeCount = 0
+        likeIcon.forEach(e => {
+            e.addEventListener("click", function (el) {
+
+                if (el.target.style.color == "blue") {
+
+                    e.classList.remove("fa-solid")
+                    e.style.color = null
+                    likeCount--
+
+                }
+                else {
+                    e.classList.add("fa-solid")
+                    e.style.color = "blue"
+                    likeCount++
+
+
+                }
+                console.log(likeCount);
+            })
+        })
+
+
 
 
 

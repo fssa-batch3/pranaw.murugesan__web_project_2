@@ -60,7 +60,7 @@ main {
   display: flex;
   padding: 2%;
   justify-content: space-around;
-  border-radius: 5%;
+  border-radius: 15px;
   margin-bottom: 5%;
 }
 .courseComplete > div {
@@ -68,6 +68,7 @@ main {
 }
 .courseImg{
   width: 20%;
+  border-radius: 10px;
 }
 .firstSection {
   display: flex;
@@ -94,7 +95,7 @@ main {
   background-color: #3795bd;
   margin-top: 2%;
   margin-bottom: 3%;
-  border-radius: 15%;
+  border-radius: 15px;
   cursor: pointer;
 }
 
