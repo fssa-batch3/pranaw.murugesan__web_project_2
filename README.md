@@ -93,9 +93,13 @@ Live Server: https://scryptify.netlify.app
         3. Click "Delete" button to delete
     - Expected Result:
         - The user can delete profile
-### Practice Shell Scripting ( yet to start :x: )
-### Add Course Progress in Profile page ( yet to start :x: )
-### view Course Progress in Profile page ( yet to start :x: )
-### Add Profile photo in Profile page ( yet to start :x: )
+### Add/view Course Progress in Profile page ( completed :white_check_mark: )
+- Scenario 1: Successfully add course progress
+    - Steps:
+        1. Log in as a learner.
+        2. Navigate to the course listing page.
+        3. Select a course to view its details.
+        4. Click "Enroll Path" button
+    - Expected Result:
+        - The user can view the course progress level of the selected course in profile page
 ### Change Profile photo in Profile page ( yet to start :x: )
-### Delete Profile photo in Profile page ( yet to start :x: )
