@@ -1,6 +1,6 @@
 let enroll = document.getElementById("enroll");
 let arr = JSON.parse(localStorage.getItem("course_list"));
-let user = JSON.parse(localStorage.getItem("profile"));
+// let user = JSON.parse(localStorage.getItem("profile"));
 let res;
 
 enroll.addEventListener("click", (e) => {
