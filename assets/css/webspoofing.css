@@ -137,6 +137,12 @@ a {
 h3,p{
   margin-top: 4%;
 }
+h3{
+  color: #2f58cd;
+}
 img{
   width:50%
+}
+#vul_ex{
+  color: red;
 }
