@@ -29,6 +29,7 @@
             <a href="../profile/profile.html"><button>Profile</button></a>
         </nav>
     </header>
+    <!-- NAVIGATION LINKS -->
     <div class="mainDiv">
         <aside>
             <a href="#intro">Introduction</a>
@@ -42,6 +43,7 @@
                 </div>
             </div>
             <hr>
+            <!-- EXPLAINATION ABOUT SCRIPTING -->
             <p >In this Section, You will learn what is scripting and how it is works and how to write a script and execute it.</p>
             <p>First of all, what is scripting !?. In computer programming, a script is a program or sequence of instructions that is interpreted or carried out by another program rather than by the computer processor (as a compiled program is).</p>
             <p>A script is sometimes used to mean a list of operating system commands
@@ -56,6 +58,7 @@
             <div id="version" class="editor">
                 <code>C:\Users\Scryptify> python --version</code>
             </div>
+            <!-- EXPLAINING ABOUT FILE HANDLING -->
             <p>The file handling plays an important role when the data needs to be stored permanently into the file. A
                 file is a named location on disk to store related information. We can access the stored information
                 (non-volatile) after the program termination.</p>
@@ -80,12 +83,14 @@
                 <li>Create a python file with the extension of .py</li>
                 <li>Try this below code</li>
             </ul>
+            <!-- FIRST CODE TO WRITE -->
             <div class="editor">
                 <code>#opens the file file.txt in read mode</code><br>
                 <code>testfile = open("file.txt","r")</code><br>
                 <code>if testfile:</code><br>&nbsp;&nbsp;&nbsp;&nbsp;
                 <code>print("file is opened successfully")</code><br>
             </div>
+            <!-- OUTPUT FOR THE CODE -->
             <p>The output will be :</p>
             <div id="output">
                 <pre>&lt;class '_io.TextIOWrapper'&gt;</pre>
@@ -105,6 +110,7 @@
                 open is "r". What is "r" ?</p>
             <p>"r" means read. if we want to write the file, we have to specify "w". Here are the list of the commands
                 you can use.</p>
+                <!-- ACCESS MOD TABLE -->
             <table id="accessMode">
                 <caption>Access Modes</caption>
                 <tbody>
@@ -181,17 +187,20 @@
             </table>
             <p>So, Practice with this and try to write scripts on your own in your computer. Now for a practice we just
                 write a script which will create a text file in Desktop who ever executing it.</p>
+                <!-- code to create a file in desktop -->
             <div class="editor">
-                <code>import os</code>
-                <code>f=open("C:/Users/"+os.getlogin()+"/Desktop/program.txt","w")</code>
-                <code>f.write("Successfully created a file which contains virus")</code>
-                <code>f.close()</code>
+                <code>import os <br>
+                f=open("C:/Users/"+os.getlogin()+"/Desktop/program.txt","w") <br>
+                f.write("Successfully created a file which contains virus") <br>
+                f.close()</code>
             </div>
+            <!-- explaining what is os module -->
             <p>In the first line we imported OS module.</p>
             <p><strong>What is OS module ?</strong></p>
             <p>The OS module in Python provides functions for creating and removing a directory (folder), fetching its contents, changing and identifying the current directory, etc. You first need to import the os module to interact with the underlying operating system.</p>
             <p>In the second line we get the user name with os module method called getlogin() and writing some plain text in text file called program in desktop</p>
         </main>
+        <!-- you know part -->
         <div id="rightsidebar">
             <div class="SideBar">
                 <div class="titleHead"><strong>Do you know</strong></div>

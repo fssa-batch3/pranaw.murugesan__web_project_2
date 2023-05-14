@@ -120,3 +120,36 @@ document.getElementById("deleteProfile").addEventListener("click", function () {
     }
   });
 });
+
+// CHECKING THE ENROLLED COURSE IS IN PROFILE PAGE
+let courses = document.querySelectorAll(".courseComplete");
+let course_list = JSON.parse(localStorage.getItem("course_list"));
+let user = JSON.parse(localStorage.getItem("profile"));
+let course_div;
+if(localStorage.getItem("course_list")){
+    courses.forEach((e) => {
+    course_list.find((el) => {
+        if (el["enrolled_course"] == e.dataset.id && el["user_name"]==user.email) {
+
+            e.style.display = "flex";
+            return course_div=el;
+        }
+       
+    })
+
+})
+}
+
+// NAVIGATION LINKS
+document.getElementById("tyk").addEventListener("click",function(){
+window.location.href="../learning_pages/stagesOfHacking.html"
+})
+document.getElementById("web").addEventListener("click",function(){
+window.location.href="../learning_pages/webhacking.html"
+})
+document.getElementById("mobile").addEventListener("click",function(){
+window.location.href="../learning_pages/mobileHacking.html"
+})
+document.getElementById("script").addEventListener("click",function(){
+window.location.href="../learning_pages/scripting.html"
+}) 

@@ -69,6 +69,7 @@ const cards = [
   
 ];
 
+// CREATING CARDS
 for (let i = cards.length - 1; i >= 0; i--) {
   const container = document.createElement("div");
   container.setAttribute("class", "container");
@@ -148,7 +149,7 @@ stage.addEventListener("click", function () {
 //   // window.location.href = "../learning_pages/scripting.html";
 // });
 
-
+// SEARCH FUNCTION
 let search=document.getElementById("searchCourse");
         search.addEventListener("keyup",(e)=>{
             let word=e.target.value.toLowerCase();

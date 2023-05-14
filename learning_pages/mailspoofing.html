@@ -28,6 +28,7 @@
             <a href="../profile/profile.html"><button>Profile</button></a>
         </nav>
     </header>
+    <!-- asking user to enter original mail id -->
     <div class="popUpMail">
         <strong id="str">Before starting with this course, please enter your original email id to experience mock Mail
             Spoofing</strong>
@@ -39,10 +40,12 @@
             <button class="btn btn-success">Continue</button>
         </form>
     </div>
+    <!-- if mail sent this div will appear -->
     <div class="mailSent">
         <h3>Mail Sent !. Check your spam folder</h3>
         <button id="btn-okay" class="btn btn-success">Okay</button>
     </div>
+    <!-- asking user that they have seen the mail -->
     <div class="popUpConfirm">
         <h3>Have you seen the mail ?</h3>
         <button id="BtnYes" class="btn btn-success">Yes</button>
@@ -60,11 +63,13 @@
                 </div>
             </div>
             <hr>
+            <!-- example mail -->
             <img id="mailSpoof" src="../assets/img/clickjack_gmail.png" alt="image_err">
             <h3 id="instruction"><strong>In this email, Attacker try to scare the target by telling he know all about him. Also he telling that the target have only 24 hours. By telling like this, the target will get frightened. The person cannot do anything at that time. Also he insisting that to click the link.</strong></h3>
             <h4 id="toDo"><strong>At the time like this, Do not get afraid of this. Just calm down and take a deep breathe, calmly report this kind of emails if have received</strong></h4>
             <h4>Cyber Crime Helpline is 1930.</h4>
         </main>
+        <!-- do you know part -->
         <div id="rightsidebar">
             <div class="SideBar">
                 <div class="titleHead"><strong>Do you know</strong></div>
@@ -76,6 +81,7 @@
             </div>
         </div>
     </div>
+    <!-- js files for sending mail -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="../assets/js/mailspoofing.js"></script>
 </body>
