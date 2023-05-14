@@ -14,6 +14,7 @@ let name = document.getElementById("name");
 let welcomeText = document.getElementById("welcome");
 let gender = document.getElementById("male");
 let genderfemale = document.getElementById("female");
+let editForm = document.getElementsByClassName("edit");
 
 // showing datas in Profile Page
 arr.find((element) => {
@@ -43,7 +44,7 @@ document.getElementById("switch").addEventListener("click", function () {
 
 //Edit Profile
 document.getElementById("editProfile").addEventListener("click", function () {
-  let editForm = document.getElementsByClassName("edit");
+  
   editForm[0].classList.add("view");
 
   document.querySelector(".container").style.filter = "blur(8px)";
@@ -75,7 +76,8 @@ document.getElementById("Save").addEventListener("click", (e) => {
 
 //Cancel btn in Edit Profile
 document.getElementById("Cancel").addEventListener("click", function () {
-  window.location.href = "./profile.html";
+  // window.location.href = "./profile.html";
+  editForm[0].classList.remove("view")
 });
 
 //Delete profile Btn

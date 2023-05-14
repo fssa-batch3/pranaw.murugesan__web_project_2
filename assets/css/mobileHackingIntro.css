@@ -53,10 +53,10 @@ aside div{
 aside div:first-child img{
     margin-left: 30%;
 }
-aside div:last-child> img{
+/* aside div:last-child> img{
     width: 100%;
     
-}
+} */
 strong{
     color: blueviolet;
 }

@@ -225,21 +225,18 @@ learnBtn[2].addEventListener("click",function(e){
   }
   
 })
-// learnBtn[3].addEventListener("click",function(e){
-//   if(localStorage.getItem("course_list")){
-//     console.log(e.target.dataset.id);
-//     course_list.find(el=>{
-//       if(el["enrolled_course"]==e.target.dataset.id){
-//         window.location.href="../learning_pages/humanHacking.html"
-//       }else{
-//         window.location.href="../learning_pages/humanHacking.html"
-//       }
-//     })
-//   }else{
-//     window.location.href="../learning_pages/scriptingIntro.html"
-//   }
-  
-// })
 learnBtn[3].addEventListener("click",function(e){
-  window.location.href="../learning_pages/humanHacking.html"
+  if(localStorage.getItem("course_list")){
+    console.log(e.target.dataset.id);
+    course_list.find(el=>{
+      if(el["enrolled_course"]==e.target.dataset.id){
+        window.location.href="../learning_pages/humanHacking.html"
+      }else{
+        window.location.href="../learning_pages/humanHackIntro.html"
+      }
+    })
+  }else{
+    window.location.href="../learning_pages/humanHackIntro.html"
+  }
+  
 })
