@@ -1,5 +1,5 @@
-JSON.parse(localStorage.getItem("course_list")) 
-JSON.parse(localStorage.getItem("profile"));
+// JSON.parse(localStorage.getItem("course_list")) 
+// JSON.parse(localStorage.getItem("profile"));
 // course page
 const cards = [
   {

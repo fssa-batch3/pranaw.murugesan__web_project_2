@@ -7,9 +7,9 @@ enroll.addEventListener("click", (e) => {
   let user = JSON.parse(localStorage.getItem("profile"));
   let course_id = e.target.dataset.id;
   let enrolled_data = {
-    user_name: user.email,
-    enrolled_course: course_id,
-    is_enrolled: true,
+    "user_name": user.email,
+    "enrolled_course": course_id,
+    "is_enrolled": true,
   };
   // console.log(enrolled_data);
   arr = localStorage.getItem("course_list")
