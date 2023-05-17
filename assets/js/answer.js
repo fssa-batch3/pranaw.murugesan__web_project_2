@@ -45,12 +45,6 @@ yourAnswer.addEventListener("submit", function (e) {
     answer: answerUserTyped,
   };
   for (let i = 0; i < forum.length; i++) {
-    //     if (heading == forum[i]["questionName"]) {
-    //         //     answersStorage = {
-    //         //     "answer": answerUserTyped,
-    //         // }
-    //         forum[i]["answer"].push(answerUserTyped)
-    //     }
     forum[i]["answer"].push(answersStorage);
     localStorage.setItem("forum", JSON.stringify(forum));
     location.reload();

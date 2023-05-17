@@ -1,3 +1,5 @@
+// const { json } = require("express");
+
 let userData = JSON.parse(localStorage.getItem("userData"));
 let askQuestionBtn = document.getElementById("ask");
 let askQuestionDiv = document.getElementsByClassName("askingQuestion");
@@ -37,17 +39,20 @@ askQuestionForm.addEventListener("submit", function () {
   let id = Math.floor(Math.random() * 100);
   userQuestions = {
     id: id,
-    "user": currentUser,
-    "questionName": questionName,
-    "questionDesc": questionDesc,
+    user: currentUser,
+    questionName: questionName,
+    questionDesc: questionDesc,
+    views: "",
     answer: [],
   };
   Questions.push(userQuestions);
   localStorage.setItem("forum", JSON.stringify(Questions));
-  // window.location.href="./forum.html"
+  window.location.href = "./forum.html";
 });
 
 let answer = JSON.parse(localStorage.getItem("forum"));
+let viewss = JSON.parse(localStorage.getItem("forum"));
+let counter = viewss[0]["views"];
 
 if (localStorage.getItem("forum")) {
   for (let i = 0; i < answer.length; i++) {
@@ -60,7 +65,7 @@ if (localStorage.getItem("forum")) {
 <ul>
 <li>0 votes</li>
 <li id="answerCount">${answer[i]["answer"].length} answers</li>
-<li>23 views</li>
+<li id="numbercount">${counter} views</li>
 </ul>
 </div>
 <div class="secondSection">
@@ -80,3 +85,20 @@ if (localStorage.getItem("forum")) {
     });
   }
 }
+
+let views = document.querySelectorAll(".question");
+let numbercount = document.querySelectorAll("#numbercount");
+let show;
+let nums;
+views.forEach((e) => {
+  // let cnt = 0;
+
+  e.addEventListener("click", (el) => {
+    answer.forEach((element) => {
+      if (element.questionName == e.innerText) {
+        element.views = Number(element.views) + 1;
+        localStorage.setItem("forum", JSON.stringify(answer));
+      }
+    });
+  });
+});

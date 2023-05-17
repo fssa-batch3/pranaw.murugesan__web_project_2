@@ -133,10 +133,10 @@ a {
 .firstSection > ul > li {
   margin-bottom: 20%;
 }
-.firstSection > ul > li:nth-child(2) {
+/* .firstSection > ul > li:nth-child(2) {
   border: 1px solid black;
   border-radius: 10%;
-}
+} */
 p a{
   background-color: lightblue;
   color: #2f58cd;
