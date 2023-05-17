@@ -4,7 +4,7 @@
 const cards = [
   {
     imgSource: "../assets/img/thingsYouShouldKnow.jpg",
-    title: "Things you should know",
+    title: "Get Started",
     desc: "Basic things that you should know about hacking before getting into this",
     redirection: "stages",
     dataset: "thingsYouShouldKnow",
