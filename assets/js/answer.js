@@ -48,6 +48,7 @@ yourAnswer.addEventListener("submit", function (e) {
     forum[i]["answer"].push(answersStorage);
     localStorage.setItem("forum", JSON.stringify(forum));
     location.reload();
+    
   }
   // forum.push(answersStorage)
 });
@@ -56,11 +57,12 @@ forum.find((e) => {
   if (e["id"] == id) {
     // finding answer
     e["answer"].find((el) => {
+    
       // Appending div
       const answeredSection = document.createElement("div");
       answeredSection.classList.add("answeredSection");
 
-      const strong = document.createElement("strong");
+      const strong = document.createElement("h5");
       strong.textContent = `Answered by ${el["answeredBy"]}`;
       answeredSection.appendChild(strong);
 
@@ -80,7 +82,7 @@ forum.find((e) => {
       likeIcon.setAttribute("class", "fa-regular fa-thumbs-up");
       likeIcon.setAttribute("id", "likeIcon");
       like.appendChild(likeIcon);
-
+      document.querySelector("#viewed").innerHTML=`views ${e["views"]}`
       document.querySelector(".answeredSection").appendChild(answeredSection);
     });
   }
@@ -103,3 +105,4 @@ likeIcon.forEach((e) => {
     console.log(likeCount);
   });
 });
+

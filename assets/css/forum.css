@@ -174,3 +174,10 @@ p a{
   display: flex;
   justify-content: space-between;
 }
+.asked{
+  display: flex;
+}
+.asked p{
+  margin-right: 15px;
+  color: #2f58cd;
+}
